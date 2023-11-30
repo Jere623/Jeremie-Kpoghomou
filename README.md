@@ -1,1 +1,1 @@
-# Jérémie_Kpo_Data_Scince
+# Jérémie_Kpo_Data_Science
