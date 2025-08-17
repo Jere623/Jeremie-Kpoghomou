@@ -5,5 +5,5 @@ numpy
 matplotlib
 PIL
 pathlib 
-qrcode
+qrcode[pil]
 io
