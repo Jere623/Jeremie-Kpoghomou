@@ -6,3 +6,4 @@ matplotlib
 PIL
 pathlib 
 qrcode
+io
