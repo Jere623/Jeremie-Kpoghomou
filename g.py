@@ -1,25 +1,8 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
+import segno  
 import io
-
-# ------------------------------
-# Fonction sécurisée pour QR Code (compatible Streamlit Cloud)
-# ------------------------------
-def generate_qr_code(data):
-    try:
-        import qrcode
-    except ImportError:
-        st.warning("Le module 'qrcode' n'est pas installé sur Streamlit Cloud. QR Code non disponible.")
-        return None
-    qr = qrcode.QRCode(box_size=10, border=2)
-    qr.add_data(data)
-    qr.make(fit=True)
-    img_qr = qr.make_image(fill_color="black", back_color="white")
-    buf = io.BytesIO()
-    img_qr.save(buf, format="PNG")
-    buf.seek(0)
-    return buf
 
 # ------------------------------
 # Page config & initial state
@@ -158,9 +141,11 @@ with right:
 
         # ----------- QCODE section via radio ----------
         if st.session_state.section == "QCode":
-            buf = generate_qr_code("https://jeremiekpo77.streamlit.app/")
-            if buf:
-                st.image(buf, caption="🔗 QR Code", use_column_width=True)
+            qr = segno.make("https://jeremiekpo77.streamlit.app/")  # <-- lien du QR code
+            buf = io.BytesIO()
+            qr.save(buf, kind='png')
+            buf.seek(0)
+            st.image(buf, caption="🔗 QR Code", use_column_width=True)
 
         # ----------- CONTENU PRINCIPAL ----------
         st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
