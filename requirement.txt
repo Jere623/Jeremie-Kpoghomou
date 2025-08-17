@@ -4,5 +4,9 @@ pandas
 numpy
 matplotlib
 Pillow
-pathlib 
+pathlib
+
 qrcode
+
+segno
+
