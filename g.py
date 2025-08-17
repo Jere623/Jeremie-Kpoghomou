@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
+
 import qrcode
 import io
 
@@ -156,7 +157,7 @@ with right:
 
 
         # ----------- CONTENU PRINCIPAL ----------
-        #st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
+        st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
         st.caption("Présentation interactive – radio cliquable, édition et animations")
 
         CONTENT = {
