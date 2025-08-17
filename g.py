@@ -2,7 +2,7 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
-import segno  
+import qrcode
 import io
 
 # ------------------------------
@@ -142,14 +142,22 @@ with right:
 
         # ----------- QCODE section via radio ----------
         if st.session_state.section == "QCode":
-            qr = segno.make("https://jeremiekpo77.streamlit.app/")  # <-- lien du QR code
+            qr = qrcode.QRCode(box_size=10, border=2)
+            qr.add_data("https://jeremiekpo77.streamlit.app/")  # <-- nouveau lien
+            qr.make(fit=True)
+            img_qr = qr.make_image(fill_color="black", back_color="white")
+
             buf = io.BytesIO()
-            qr.save(buf, kind='png')
-            buf.seek(0)
-            st.image(buf, caption="🔗 QR Code", use_column_width=True)
+            img_qr.save(buf, format="PNG")
+            
+            st.image(buf.getvalue(), caption="🔗 QR Code", use_column_width=True)
+
+
+
+
 
         # ----------- CONTENU PRINCIPAL ----------
-        st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
+        #st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
         st.caption("Présentation interactive – radio cliquable, édition et animations")
 
         CONTENT = {
@@ -188,3 +196,4 @@ with right:
             st.markdown(CONTENT.get(st.session_state.section, ""))
 
         st.markdown("<div class='footnote'>© Présenter - By Jérémie KPOGHOMOU - Data Scientist.</div>", unsafe_allow_html=True)
+
