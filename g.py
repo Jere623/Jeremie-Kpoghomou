@@ -1,6 +1,8 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
+import qrcode
+import io
 
 # ------------------------------
 # Page config & initial state
@@ -18,12 +20,12 @@ if "initialized" not in st.session_state:
     st.session_state.profile = {
         "name": "Jérémie KPOGHOMOU",
         "profil": "Ingénieur Data chez Safran Aircraft Engines",
-        "image_path": "KPOGHOMOU-Style libre-102x152 mm.jpg",
+        "image_path": "/Users/jeremie/Desktop/Myprojet_C02/KPOGHOMOU-Style libre-102x152 mm.jpg",
         "linkedin": "https://www.linkedin.com/in/jérémiekpoghomou/",
         "email": "jeremie.kpoghomou77@gmail.com",
         "github": "https://github.com/Jere623",
-        "linkedin_logo": "/Users/jeremie/Desktop/Myprojet_C02/LinkedIn_icon.svg.png",
-        "github_logo": "/Users/jeremie/Desktop/Myprojet_C02/GitHub-cat-logo.jpg",
+        "linkedin_logo": "/Users/jeremie/Desktop/Myprojet_C02/Linkedin-Logo-PNG.png",
+        "github_logo": "/Users/jeremie/Desktop/Myprojet_C02/GitHub.png",
     }
 
 # ------------------------------
@@ -34,10 +36,9 @@ st.markdown(
     <style>
     :root { --radius: 16px; }
 
-    /* TITRE PRINCIPAL - Rouge Jaune Vert */
     .big-title {
         font-weight: 900;
-        font-size: clamp(32px, 5vw, 60px); /* Ajustable facilement */
+        font-size: clamp(32px, 5vw, 60px);
         line-height: 1.2;
         margin: 0 0 12px 0;
         background: linear-gradient(90deg, red, yellow, green);
@@ -71,18 +72,16 @@ st.markdown(
         margin-top: 2px; margin-bottom: 6px;
     }
 
-    /* Logos réduits mais visibles */
     .profile-info img {
         width: 20px; height: 20px;
         margin-right: 6px;
         object-fit: contain;
     }
 
-    /* Présentation By Jérémie déplacé bien en bas */
     .footnote {
         font-size: 1rem;
         opacity: .8;
-        margin-top: 80px; /* plus bas */
+        margin-top: 80px;
         text-align: center;
     }
     </style>
@@ -103,6 +102,7 @@ with left:
         selected_section = st.radio(
             label="",
             options=[
+                "QCode",
                 "Introduction",
                 "1. L’importance de découvrir son talent",
                 "2. Bien s’orienter dans un monde en mutation",
@@ -138,11 +138,29 @@ with left:
 # ------------------------------
 with right:
     if st.session_state.presentation_on:
-        st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
+
+        # ----------- QCODE section via radio ----------
+        if st.session_state.section == "QCode":
+            qr = qrcode.QRCode(box_size=10, border=2)
+            qr.add_data("https://jeremiekpo77.streamlit.app/")  # <-- nouveau lien
+            qr.make(fit=True)
+            img_qr = qr.make_image(fill_color="black", back_color="white")
+
+            buf = io.BytesIO()
+            img_qr.save(buf, format="PNG")
+            
+            st.image(buf.getvalue(), caption="🔗 QR Code", use_column_width=True)
+
+
+
+
+
+        # ----------- CONTENU PRINCIPAL ----------
+        #st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
         st.caption("Présentation interactive – radio cliquable, édition et animations")
 
         CONTENT = {
-            "Introduction": "## Introduction\n\n**Bonjour à toutes et à tous...** Bienvenue dans cette présentation interactive qui vous aidera à comprendre l’importance de découvrir vos talents et de bien vous orienter dans vos choix de vie et de carrière.",
+            "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est votre talent unique ?\n\n2. Votre métier existera-t-il encore dans 10 ans ?\n\n3. Si l’IA remplaçait votre emploi, comment rebondir ?.",
             
             "1. L’importance de découvrir son talent": "## 1. L’importance de découvrir son talent\n\n### Pourquoi découvrir son talent ?\nDécouvrir son talent est essentiel pour s’épanouir et réussir dans sa vie personnelle et professionnelle. C’est une boussole intérieure qui nous guide dans nos choix.",
             
@@ -152,7 +170,7 @@ with right:
             
             "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\nMon expérience académique et professionnelle illustre l’importance de la data et des sciences appliquées dans les métiers d’avenir.",
             
-            "5. Messages ciblés": None,  # sera géré plus bas
+            "5. Messages ciblés": None,
             
             "6. Conseils pratiques pour s’orienter": "## 6. Conseils pratiques pour s’orienter\n\n👉 Identifiez vos points forts\n👉 Explorez les métiers d’avenir\n👉 Formez-vous continuellement.",
             
@@ -177,4 +195,3 @@ with right:
             st.markdown(CONTENT.get(st.session_state.section, ""))
 
         st.markdown("<div class='footnote'>© Présenter - By Jérémie KPOGHOMOU - Data Scientist.</div>", unsafe_allow_html=True)
-
