@@ -73,8 +73,8 @@ st.markdown(
     }
 
     .profile-info img {
-        width: 20px; height: 20px;
-        margin-right: 6px;
+        width: 10px; height: 10px;
+        margin-right: 3px;
         object-fit: contain;
     }
 
