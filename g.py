@@ -1,8 +1,8 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
-import segno 
-import qrcode 
+#import segno 
+#import qrcode 
 import io
 
 # ------------------------------
@@ -74,7 +74,7 @@ st.markdown(
     }
 
     .profile-info img {
-        width: 20px; height: 20px;
+        width: 10px; height: 10px;
         margin-right: 6px;
         object-fit: contain;
     }
