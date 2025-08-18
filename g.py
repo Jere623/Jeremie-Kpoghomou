@@ -1,8 +1,6 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
-#import segno 
-#import qrcode 
 import io
 
 # ------------------------------
@@ -74,7 +72,7 @@ st.markdown(
     }
 
     .profile-info img {
-        width: 10px; height: 10px;
+        width: 20px; height: 20px;
         margin-right: 6px;
         object-fit: contain;
     }
@@ -99,16 +97,17 @@ with left:
     if st.button("🔘 On|Off  la Présentation"):
         st.session_state.presentation_on = not st.session_state.presentation_on
 
-    # ✅ Ajout du bouton QRCode indépendant
+    # ✅ Affichage QRCode depuis fichier
     show_qr_checkbox = st.checkbox("QRcode", value=False)
     if show_qr_checkbox:
         show_real_qr = st.checkbox("Afficher QRcode", value=False)
         if show_real_qr:
-            qr = segno.make("https://jeremiekpo77.streamlit.app/")  # <-- lien du QR code
-            buf = io.BytesIO()
-            qr.save(buf, kind='png')
-            buf.seek(0)
-            st.image(buf, caption="🔗 QR Code", use_column_width=True)
+            qr_path = Path("QRCode.png")
+            if qr_path.exists():
+                img_qr = Image.open(qr_path)
+                st.image(img_qr, caption="🔗 QR Code", use_column_width=True)
+            else:
+                st.warning("Le fichier QRCode.png est introuvable.")
 
     if st.session_state.presentation_on:
         selected_section = st.radio(
