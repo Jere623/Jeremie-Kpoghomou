@@ -103,7 +103,7 @@ with left:
         selected_section = st.radio(
             label="",
             options=[
-                "QCode",
+                "QRcode",
                 "Introduction",
                 "1. L’importance de découvrir son talent",
                 "2. Bien s’orienter dans un monde en mutation",
@@ -141,7 +141,7 @@ with right:
     if st.session_state.presentation_on:
 
         # ----------- QCODE section via radio ----------
-        if st.session_state.section == "QCode":
+        if st.session_state.section == "QRCode":
             qr = qrcode.QRCode(box_size=10, border=2)
             qr.add_data("https://jeremiekpo77.streamlit.app/")  # <-- nouveau lien
             qr.make(fit=True)
