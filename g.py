@@ -91,7 +91,7 @@ st.markdown(
 # ------------------------------
 # LAYOUT: Left panel
 # ------------------------------
-left, right = st.columns([1, 1.5])
+left, right = st.columns([1, 3])
 
 with left:
     if st.button("🔘 On|Off  la Présentation"):
