@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
-#import segno  
+import segno  
 import io
 
 # ------------------------------
