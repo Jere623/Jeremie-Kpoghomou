@@ -24,7 +24,7 @@ if "initialized" not in st.session_state:
         "linkedin": "https://www.linkedin.com/in/jérémiekpoghomou/",
         "email": "jeremie.kpoghomou77@gmail.com",
         "github": "https://github.com/Jere623",
-        "linkedin_logo": "/Users/jeremie/Desktop/Myprojet_C02/Linkedin-Logo-PNG.png",
+        "linkedin_logo": "LinkedIn_icon.svg.png",
         "github_logo": "/Users/jeremie/Desktop/Myprojet_C02/GitHub.png",
     }
 
