@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
-import qrcode   # ✅ on utilise qrcode à la place de segno
+#import qrcode   # ✅ on utilise qrcode à la place de segno
 import io
 
 # ------------------------------
