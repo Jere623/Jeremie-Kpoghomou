@@ -25,7 +25,7 @@ if "initialized" not in st.session_state:
         "email": "jeremie.kpoghomou77@gmail.com",
         "github": "https://github.com/Jere623",
         "linkedin_logo": "LinkedIn_icon.svg.png",
-        "github_logo": "/Users/jeremie/Desktop/Myprojet_C02/GitHub.png",
+        "github_logo": "GitHub-cat-logo.jpg",
     }
 
 # ------------------------------
@@ -132,7 +132,7 @@ with left:
         img_path = Path(prof.get("image_path", ""))
         if img_path.exists():
             img = Image.open(img_path)
-            img = img.resize((200, 220))
+            img = img.resize((150, 160))
             st.image(img)
         else:
             st.warning("Aucune image valide trouvée.")
