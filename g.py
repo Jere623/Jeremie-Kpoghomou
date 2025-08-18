@@ -150,7 +150,8 @@ with right:
     if st.session_state.presentation_on:
 
         # ----------- CONTENU PRINCIPAL ----------
-        st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
+        st.markdown("<h3 style='text-align: center; color: #222;'>Découvrir son talent et s’orienter vers les métiers d’avenir</h3>", unsafe_allow_html=True)
+
         st.caption("Présentation interactive – radio cliquable, édition et animations")
 
         CONTENT = {
