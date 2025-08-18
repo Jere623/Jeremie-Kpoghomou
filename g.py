@@ -132,7 +132,7 @@ with left:
         img_path = Path(prof.get("image_path", ""))
         if img_path.exists():
             img = Image.open(img_path)
-            img = img.resize((200, 220))
+            img = img.resize((180, 200))
             st.image(img)
         else:
             st.warning("Aucune image valide trouvée.")
