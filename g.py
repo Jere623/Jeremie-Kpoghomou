@@ -36,11 +36,11 @@ st.markdown(
     :root { --radius: 16px; }
 
     .big-title {
-        font-weight: 900;
+        font-weight: 800;
         font-size: clamp(32px, 5vw, 60px);
         line-height: 1.2;
         margin: 0 0 12px 0;
-        background: linear-gradient(30deg, red, yellow, green);
+        background: linear-gradient(90deg, red, yellow, green);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
