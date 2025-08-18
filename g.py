@@ -1,8 +1,7 @@
-
 import streamlit as st
 from PIL import Image
 from pathlib import Path
-#import qrcode
+import segno  
 import io
 
 # ------------------------------
@@ -99,11 +98,21 @@ with left:
     if st.button("🔘 On|Off  la Présentation"):
         st.session_state.presentation_on = not st.session_state.presentation_on
 
+    # ✅ Ajout du bouton QRCode indépendant
+    show_qr_checkbox = st.checkbox("QRcode", value=False)
+    if show_qr_checkbox:
+        show_real_qr = st.checkbox("Afficher QRcode", value=False)
+        if show_real_qr:
+            qr = segno.make("https://jeremiekpo77.streamlit.app/")  # <-- lien du QR code
+            buf = io.BytesIO()
+            qr.save(buf, kind='png')
+            buf.seek(0)
+            st.image(buf, caption="🔗 QR Code", use_column_width=True)
+
     if st.session_state.presentation_on:
         selected_section = st.radio(
             label="",
             options=[
-                "QRcode",
                 "Introduction",
                 "1. L’importance de découvrir son talent",
                 "2. Bien s’orienter dans un monde en mutation",
@@ -111,7 +120,7 @@ with left:
                 "4. Mon parcours comme illustration",
                 "5. Messages ciblés",
                 "6. Conseils pratiques pour s’orienter",
-                "Conclusion",
+                "7. Conclusion",
             ],
             index=0,
             key="radio_plan"
@@ -140,42 +149,26 @@ with left:
 with right:
     if st.session_state.presentation_on:
 
-        # ----------- QCODE section via radio ----------
-        if st.session_state.section == "QRCode":
-            qr = qrcode.QRCode(box_size=10, border=2)
-            qr.add_data("https://jeremiekpo77.streamlit.app/")  # <-- nouveau lien
-            qr.make(fit=True)
-            img_qr = qr.make_image(fill_color="black", back_color="white")
-
-            buf = io.BytesIO()
-            img_qr.save(buf, format="PNG")
-            
-            st.image(buf.getvalue(), caption="🔗 QR Code", use_column_width=True)
-
-
-
-
-
         # ----------- CONTENU PRINCIPAL ----------
-        #st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
+        st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
         st.caption("Présentation interactive – radio cliquable, édition et animations")
 
         CONTENT = {
             "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est votre talent unique ?\n\n2. Votre métier existera-t-il encore dans 10 ans ?\n\n3. Si l’IA remplaçait votre emploi, comment rebondir ?.",
             
-            "1. L’importance de découvrir son talent": "## 1. L’importance de découvrir son talent\n\n### Pourquoi découvrir son talent ?\nDécouvrir son talent est essentiel pour s’épanouir et réussir dans sa vie personnelle et professionnelle. C’est une boussole intérieure qui nous guide dans nos choix.",
+            "1. L’importance de découvrir son talent": "## 1. L’importance de découvrir son talent.\n\n**Pourquoi découvrir son talent ?**\n\n Découvrir son talent est essentiel pour s’épanouir et réussir dans sa vie personnelle et professionnelle.\n\n C’est une boussole intérieure qui nous guide dans nos choix.",
             
-            "2. Bien s’orienter dans un monde en mutation": "## 2. Bien s’orienter dans un monde en mutation\n\n### S’orienter dans un monde en constante évolution\nAujourd’hui, les métiers changent rapidement. Savoir bien s’orienter permet d’anticiper les besoins de demain et d’éviter le chômage technologique.",
+            "2. Bien s’orienter dans un monde en mutation": "## 2. Un talent = aptitude naturelle + passion + persévérance.\n\n C’est une boussole qui guide notre vie professionnelle.",
             
-            "3. L’importance des filières scientifiques et techniques": "## 3. L’importance des filières scientifiques et techniques\n\nLes sciences et techniques ouvrent les portes vers l’innovation, l’intelligence artificielle, l’aéronautique, la data science, et bien plus.",
-            
-            "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\nMon expérience académique et professionnelle illustre l’importance de la data et des sciences appliquées dans les métiers d’avenir.",
+            "3. L’importance des filières scientifiques et techniques": "## 3. L’importance des filières scientifiques et techniques\n\n Les maths = langue de l’IA\n\n L’informatique = outil central.\n\n Options utiles : Mathématiques, Physique-Chimie, Sciences de l’Ingénieur, NSI\n\n Ces choix ouvrent la porte aux métiers d’avenir.",
+           
+            "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n Licence en Économie-Gestion\n\n Triple Master : Data Science, Statistiques appliquées, Finances publiques\n\n Forces : analyse, rigueur, curiosité face aux chiffres\n\n Orientation stratégique vers un domaine porteur.",
             
             "5. Messages ciblés": None,
             
-            "6. Conseils pratiques pour s’orienter": "## 6. Conseils pratiques pour s’orienter\n\n👉 Identifiez vos points forts\n👉 Explorez les métiers d’avenir\n👉 Formez-vous continuellement.",
+            "6. Conseils pratiques pour s’orienter": "## 6. Conseils pratiques pour s’orienter\n\n 👉 Identifiez vos points forts\n\n 👉 Explorez les métiers d’avenir\n\n 👉 Formez-vous continuellement.",
             
-            "Conclusion": "## Conclusion\n\nEn découvrant vos talents et en vous orientant intelligemment, vous vous offrez une meilleure chance de réussite et d’épanouissement.",
+            "7. Conclusion": "## 7. Conclusion\n\n En découvrant vos talents et en vous orientant intelligemment, vous vous offrez une meilleure chance de réussite et d’épanouissement.",
         }
 
         if st.session_state.section == "5. Messages ciblés":
@@ -196,4 +189,3 @@ with right:
             st.markdown(CONTENT.get(st.session_state.section, ""))
 
         st.markdown("<div class='footnote'>© Présenter - By Jérémie KPOGHOMOU - Data Scientist.</div>", unsafe_allow_html=True)
-
