@@ -155,25 +155,25 @@ with right:
         st.caption("Oser, c'est déjà gagner  – Journée d'orientation, 3ème édition")
 
         CONTENT = {
-            "Introduction": "## Introduction\n\n**Trois questions essentielles :**\n\n1. Quel est mon talent ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?",
+            "Introduction": "## Introduction\n\n**📌Trois questions essentielles :**\n\n1. Quel est mon talent ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?",
             
-            "1. Oser rêver": "## 1. Oser rêver.\n\n**Pourquoi rêver est indispensable ?**\n\nSans rêve, on avance sans boussole. On subit les choix des autres, on vit dans la routine, c'est l'horizon qui guide nos pas.\n\n Exemple concret : L'innovation  =  c'est le fruit du rêve ",
+            "1. Oser rêver": "## 1. Oser rêver.\n\n**📌Pourquoi rêver est indispensable ?**\n\nSans rêve, on avance sans boussole. On subit les choix des autres, on vit dans la routine, c'est l'horizon qui guide nos pas.\n\n Exemple concret : L'innovation  =  c'est le fruit du rêve ",
             
-            "2. Choisir avec courage": "## 2. Passer de l’intention à l’action.\n\n**Pourquoi le choix fait peur ?**\n\nLa clé du choix : il faut oser franchir le pas.\n\n Exemple : ose planter, même avec des doutes, verra pousser des fruits.",
+            "2. Choisir avec courage": "## 2. Passer de l’intention à l’action.\n\n**📌Pourquoi le choix fait peur ?**\n\nLa clé du choix : il faut oser franchir le pas.\n\n Exemple : ose planter, même avec des doutes, verra pousser des fruits.",
             
-            "3. Construire pas à pas": "## 3. Faire de son avenir une réalité\n\nConstruire, c’est accepter le temps et l’effort.\n\n**Les ingrédients de la construction :**\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
+            "3. Construire pas à pas": "## 3. Faire de son avenir une réalité\n\nConstruire, c’est accepter le temps et l’effort.\n\n**📌Les ingrédients de la construction :**\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
            
-            "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n Licence en Économie-Gestion\n\n Triple Master : Data Science, Statistiques appliquées, Finances publiques\n\n Forces : analyse, rigueur, curiosité face aux chiffres.\n\n Orientation stratégique vers un domaine porteur.",
+            "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n Licence en Économie-Gestion\n\n Triple Master : Data Science, Statistiques appliquées, Finances publiques\n\n 📌Forces : analyse, rigueur, curiosité face aux chiffres.\n\n Orientation stratégique vers un domaine porteur.",
             
             "5. Messages ciblés": None,
             
-            "6. Trois trois (3) mots clés universelles": "## 6. Trois trois (3) mots clés universelles\n\n Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
+            "6. Trois (3) mots clés universelles": "## 6. Trois (3) mots clés universelles\n\n Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
             
-            "7. Conclusion": "## 7. Conclusion\n\n**L’avenir n’est pas une chance, c’est une responsabilité.**\n\n Il ne dépend pas seulement de vos conditions, mais de votre capacité à rêver, à choisir et à construire.\n\n Votre avenir commence aujourd’hui. Pas demain, pas dans un an : aujourd’hui.",
+            "7. Conclusion": "## 7. Conclusion\n\n**📌L’avenir n’est pas une chance, c’est une responsabilité.**\n\n Il ne dépend pas seulement de vos conditions, mais de votre capacité à rêver, à choisir et à construire.\n\n Votre avenir commence aujourd’hui. Pas demain, pas dans un an : aujourd’hui.",
         }
 
         if st.session_state.section == "5. Messages ciblés":
-            st.subheader("📌 Messages ciblés")
+            st.subheader("5 Messages ciblés")
             etudiants = st.checkbox("Aux élèves et aux étudiants", value=False)
             if etudiants:
                 st.info("👉 vous devez explorer, tester, être curieux, car le diplôme seul ne comptera pas.")
