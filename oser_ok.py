@@ -162,7 +162,7 @@ with right:
             
             "2. Choisir avec courage": "## 2. Passer de l’intention à l’action.\n\n**Pourquoi le choix fait peur ?**\n\nLa clé du choix : il faut oser franchir le pas.\n\n Exemple :",
             
-            "3. Construire pas à pas": "##**3. Faire de son avenir une réalité**\n\n Construire, c’est accepter le temps et l’effort.\n\n Les ingrédients de la construction :\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
+            "3. Construire pas à pas": "**3. Faire de son avenir une réalité**\n\n Construire, c’est accepter le temps et l’effort.\n\n**Les ingrédients de la construction :**\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
            
             "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n Licence en Économie-Gestion\n\n Triple Master : Data Science, Statistiques appliquées, Finances publiques\n\n Forces : analyse, rigueur, curiosité face aux chiffres\n\n Orientation stratégique vers un domaine porteur.",
             
