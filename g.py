@@ -179,7 +179,7 @@ with right:
             if etudiants:
                 st.info("👉 Choisissez des options porteuses.")
 
-            diplomes = st.checkbox("Diplômés sans emploi", value=False)
+            diplomes = st.checkbox("Diplômés en recherche d'emploi", value=False)
             if diplomes:
                 st.info("👉 Formez-vous aux métiers d’avenir.")
 
