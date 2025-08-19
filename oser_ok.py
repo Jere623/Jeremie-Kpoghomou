@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 from pathlib import Path
-import segno  
 import io
 
 # ------------------------------
@@ -20,12 +19,12 @@ if "initialized" not in st.session_state:
     st.session_state.profile = {
         "name": "Jérémie KPOGHOMOU",
         "profil": "Ingénieur Data chez Safran Aircraft Engines",
-        "image_path": "/Users/jeremie/Desktop/Myprojet_C02/KPOGHOMOU-Style libre-102x152 mm.jpg",
+        "image_path": "KPOGHOMOU-Style libre-102x152 mm.jpg",
         "linkedin": "https://www.linkedin.com/in/jérémiekpoghomou/",
         "email": "jeremie.kpoghomou77@gmail.com",
         "github": "https://github.com/Jere623",
-        "linkedin_logo": "/Users/jeremie/Desktop/Myprojet_C02/Linkedin-Logo-PNG.png",
-        "github_logo": "/Users/jeremie/Desktop/Myprojet_C02/GitHub.png",
+        "linkedin_logo": "LinkedIn_icon.svg.png",
+        "github_logo": "GitHub-cat-logo.jpg",
     }
 
 # ------------------------------
@@ -37,7 +36,7 @@ st.markdown(
     :root { --radius: 16px; }
 
     .big-title {
-        font-weight: 900;
+        font-weight: 800;
         font-size: clamp(32px, 5vw, 60px);
         line-height: 1.2;
         margin: 0 0 12px 0;
@@ -92,22 +91,23 @@ st.markdown(
 # ------------------------------
 # LAYOUT: Left panel
 # ------------------------------
-left, right = st.columns([1, 1.5])
+left, right = st.columns([1, 3])
 
 with left:
     if st.button("🔘 On|Off  la Présentation"):
         st.session_state.presentation_on = not st.session_state.presentation_on
 
-    # ✅ Ajout du bouton QRCode indépendant
+    # ✅ Affichage QRCode depuis fichier
     show_qr_checkbox = st.checkbox("QRcode", value=False)
     if show_qr_checkbox:
         show_real_qr = st.checkbox("Afficher QRcode", value=False)
         if show_real_qr:
-            qr = segno.make("https://jeremiekpo77.streamlit.app/")  # <-- lien du QR code
-            buf = io.BytesIO()
-            qr.save(buf, kind='png')
-            buf.seek(0)
-            st.image(buf, caption="🔗 QR Code", use_column_width=True)
+            qr_path = Path("QRCode.png")
+            if qr_path.exists():
+                img_qr = Image.open(qr_path)
+                st.image(img_qr, caption="🔗 QR Code", use_column_width=True)
+            else:
+                st.warning("Le fichier QRCode.png est introuvable.")
 
     if st.session_state.presentation_on:
         selected_section = st.radio(
@@ -132,7 +132,7 @@ with left:
         img_path = Path(prof.get("image_path", ""))
         if img_path.exists():
             img = Image.open(img_path)
-            img = img.resize((200, 220))
+            img = img.resize((180, 200))
             st.image(img)
         else:
             st.warning("Aucune image valide trouvée.")
@@ -150,7 +150,9 @@ with right:
     if st.session_state.presentation_on:
 
         # ----------- CONTENU PRINCIPAL ----------
-        st.markdown("<div class='big-title'>Oser rêver, choisir et construire son avenir</div>", unsafe_allow_html=True)
+        st.markdown("<div class='big-title' style='text-align: center;'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
+
+
         st.caption("Présentation interactive – radio cliquable, édition et animations")
 
         CONTENT = {
@@ -189,3 +191,6 @@ with right:
             st.markdown(CONTENT.get(st.session_state.section, ""))
 
         st.markdown("<div class='footnote'>© Présenter - By Jérémie KPOGHOMOU - Data Scientist.</div>", unsafe_allow_html=True)
+
+
+
