@@ -170,7 +170,7 @@ with right:
             
             "6. Trois trois (3) mots clés universelles": "## 6. Trois trois (3) mots clés universelles\n\n Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
             
-            "7. Conclusion": "## 7. Conclusion\n\n l’avenir n’est pas une chance, c’est une responsabilité. Il ne dépend pas seulement de vos conditions, mais de votre capacité à rêver, à choisir et à construire.\n\n Votre avenir commence aujourd’hui. Pas demain, pas dans un an : aujourd’hui.",
+            "7. Conclusion": "## 7. Conclusion\n\n l’avenir n’est pas une chance, c’est une responsabilité.\n\n Il ne dépend pas seulement de vos conditions, mais de votre capacité à rêver, à choisir et à construire.\n\n Votre avenir commence aujourd’hui. Pas demain, pas dans un an : aujourd’hui.",
         }
 
         if st.session_state.section == "5. Messages ciblés":
