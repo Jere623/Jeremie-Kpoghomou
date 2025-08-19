@@ -7,7 +7,7 @@ import io
 # Page config & initial state
 # ------------------------------
 st.set_page_config(
-    page_title="Oser c'est deverouiller  – Présentation interactive",
+    page_title="Oser, c'est deverouiller  – Présentation interactive",
     page_icon="✨",
     layout="wide",
 )
@@ -152,7 +152,7 @@ with right:
         # ----------- CONTENU PRINCIPAL ----------
         st.markdown("<div class='big-title' style='text-align: center;'>Oser rêver, choisir et construire son avenir</div>", unsafe_allow_html=True)
 
-        st.caption("Présentation interactive – radio cliquable, édition et animations")
+        st.caption("Oser, c'est déjà gagner  – Journée d'orientation, 3ème édition")
 
         CONTENT = {
             "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est mon talent ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?.",
