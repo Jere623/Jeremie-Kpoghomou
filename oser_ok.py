@@ -8,7 +8,7 @@ import io
 # Page config & initial state
 # ------------------------------
 st.set_page_config(
-    page_title="Découvrir son talent – Présentation interactive",
+    page_title="Oser c'est deverouiller  – Présentation interactive",
     page_icon="✨",
     layout="wide",
 )
@@ -114,13 +114,13 @@ with left:
             label="",
             options=[
                 "Introduction",
-                "1. L’importance de découvrir son talent",
-                "2. Bien s’orienter dans un monde en mutation",
-                "3. L’importance des filières scientifiques et techniques",
-                "4. Mon parcours comme illustration",
+                "1. Oser rêver",
+                "2. Choisir avec courage",
+                "3. Construire pas à pas",
+                "4. Messages pour chaque public",
                 "5. Messages ciblés",
-                "6. Conseils pratiques pour s’orienter",
-                "7. Conclusion",
+                "6. Trois trois (3) mots clés universelles",
+                "7.  Conclusion",
             ],
             index=0,
             key="radio_plan"
@@ -150,40 +150,40 @@ with right:
     if st.session_state.presentation_on:
 
         # ----------- CONTENU PRINCIPAL ----------
-        st.markdown("<div class='big-title'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
+        st.markdown("<div class='big-title'>Oser rêver, choisir et construire son avenir</div>", unsafe_allow_html=True)
         st.caption("Présentation interactive – radio cliquable, édition et animations")
 
         CONTENT = {
-            "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est votre talent unique ?\n\n2. Votre métier existera-t-il encore dans 10 ans ?\n\n3. Si l’IA remplaçait votre emploi, comment rebondir ?.",
+            "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est mon talent ? ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?.",
             
-            "1. L’importance de découvrir son talent": "## 1. L’importance de découvrir son talent.\n\n**Pourquoi découvrir son talent ?**\n\n Découvrir son talent est essentiel pour s’épanouir et réussir dans sa vie personnelle et professionnelle.\n\n C’est une boussole intérieure qui nous guide dans nos choix.",
+            "1. Oser rêver": "## 1. Oser rêver.\n\n**Pourquoi rêver est indispensable ?**\n\n Sans rêve, on avance sans boussole. On subit les choix des autres, on vit dans la routine, c'est l'horizon qui guide nos pas.\n\n Exemple concret: l'innovation = c'est le fruit du rêve ",
             
-            "2. Bien s’orienter dans un monde en mutation": "## 2. Un talent = aptitude naturelle + passion + persévérance.\n\n C’est une boussole qui guide notre vie professionnelle.",
+            "2. Choisir avec courage": "## 2. Passer de l’intention à l’action.\n\n** Pourquoi le choix fait peur ?**\n\n La clé du choix : il faut oser franchir le pas.\n\n Exemple :",
             
-            "3. L’importance des filières scientifiques et techniques": "## 3. L’importance des filières scientifiques et techniques\n\n Les maths = langue de l’IA\n\n L’informatique = outil central.\n\n Options utiles : Mathématiques, Physique-Chimie, Sciences de l’Ingénieur, NSI\n\n Ces choix ouvrent la porte aux métiers d’avenir.",
+            "3. Construire pas à pas": "## 3.** Faire de son avenir une réalité**\n\n Construire, c’est accepter le temps et l’effort.\n\n Les ingrédients de la construction :\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
            
             "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n Licence en Économie-Gestion\n\n Triple Master : Data Science, Statistiques appliquées, Finances publiques\n\n Forces : analyse, rigueur, curiosité face aux chiffres\n\n Orientation stratégique vers un domaine porteur.",
             
             "5. Messages ciblés": None,
             
-            "6. Conseils pratiques pour s’orienter": "## 6. Conseils pratiques pour s’orienter\n\n 👉 Identifiez vos points forts\n\n 👉 Explorez les métiers d’avenir\n\n 👉 Formez-vous continuellement.",
+            "6. Trois trois (3) mots clés universelles": "## 6. Trois trois (3) mots clés universelles\n\n Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
             
-            "7. Conclusion": "## 7. Conclusion\n\n En découvrant vos talents et en vous orientant intelligemment, vous vous offrez une meilleure chance de réussite et d’épanouissement.",
+            "7. Conclusion": "## 7. Conclusion\n\n l’avenir n’est pas une chance, c’est une responsabilité. Il ne dépend pas seulement de vos conditions, mais de votre capacité à rêver, à choisir et à construire.\n\n Votre avenir commence aujourd’hui. Pas demain, pas dans un an : aujourd’hui.",
         }
 
         if st.session_state.section == "5. Messages ciblés":
             st.subheader("📌 Messages ciblés")
-            etudiants = st.checkbox("Étudiants", value=False)
+            etudiants = st.checkbox("Aux élèves et aux Aux étudiants", value=False)
             if etudiants:
-                st.info("👉 Choisissez des options porteuses.")
+                st.info("👉 vous devez explorer, tester, être curieux, car le diplôme seul ne comptera pas.")
 
             diplomes = st.checkbox("Diplômés sans emploi", value=False)
             if diplomes:
-                st.info("👉 Formez-vous aux métiers d’avenir.")
+                st.info("👉 Votre valeur n’est pas définie par votre situation actuelle. Montrez vos talents, même à petite échelle.")
 
-            travailleurs = st.checkbox("Travailleurs", value=False)
+            travailleurs = st.checkbox("Aux travailleurs", value=False)
             if travailleurs:
-                st.info("👉 Anticipez, ne dormez pas sur vos acquis.")
+                st.info("👉 Le monde change, et vous devez vous réinventer.")
 
         else:
             st.markdown(CONTENT.get(st.session_state.section, ""))
