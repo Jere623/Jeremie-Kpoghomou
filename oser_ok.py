@@ -163,7 +163,7 @@ with right:
             
             "3. Construire pas à pas": "## 3. Faire de son avenir une réalité\n\nConstruire, c’est accepter le temps et l’effort.\n\n**📌 Les ingrédients de la construction :**\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
            
-            "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n Licence en Économie-Gestion\n\n Triple Master : Data Science, Statistiques appliquées, Finances publiques\n\n 📌 Forces : analyse, rigueur, curiosité face aux chiffres.\n\n Orientation stratégique vers un domaine porteur.",
+            "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n Oser rêver dès le collège\n\n Choisir avec courage à l’université )\n\n Construire avec persévérance via la spécialisation : Triple Master (Data Science, Statistiques appliquées, Finances publiques.\n\n Appliquer dans le monde professionnel.",
             
             "5. Messages ciblés": None,
             
