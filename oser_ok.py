@@ -158,7 +158,7 @@ with right:
         CONTENT = {
             "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est mon talent ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?.",
             
-            "1. Oser rêver": "## 1. Oser rêver.\n\n**Pourquoi rêver est indispensable ?**\n\n Sans rêve, on avance sans boussole. On subit les choix des autres, on vit dans la routine, c'est l'horizon qui guide nos pas.\n\n Exemple concret: l'innovation = c'est le fruit du rêve ",
+            "1. Oser rêver": "## 1. Oser rêver.\n\n**Pourquoi rêver est indispensable ?**\n\nSans rêve, on avance sans boussole. On subit les choix des autres, on vit dans la routine, c'est l'horizon qui guide nos pas.\n\n Exemple concret: l'innovation = c'est le fruit du rêve ",
             
             "2. Choisir avec courage": "## 2. Passer de l’intention à l’action.\n\n** Pourquoi le choix fait peur ?**\n\n La clé du choix : il faut oser franchir le pas.\n\n Exemple :",
             
