@@ -102,12 +102,12 @@ with left:
     if show_qr_checkbox:
         show_real_qr = st.checkbox("Afficher QRcode", value=False)
         if show_real_qr:
-            qr_path = Path("QRCode.png")
+            qr_path = Path("QRCode_oserrever.png")
             if qr_path.exists():
                 img_qr = Image.open(qr_path)
                 st.image(img_qr, caption="🔗 QR Code", use_column_width=True)
             else:
-                st.warning("Le fichier QRCode.png est introuvable.")
+                st.warning("Le fichier QRCode_oserrever.png est introuvable.")
 
     if st.session_state.presentation_on:
         selected_section = st.radio(
