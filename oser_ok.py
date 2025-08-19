@@ -150,13 +150,13 @@ with right:
     if st.session_state.presentation_on:
 
         # ----------- CONTENU PRINCIPAL ----------
-        st.markdown("<div class='big-title' style='text-align: center;'>Découvrir son talent et s’orienter vers les métiers d’avenir</div>", unsafe_allow_html=True)
+        st.markdown("<div class='big-title' style='text-align: center;'>Oser rêver, choisir et construire son avenir</div>", unsafe_allow_html=True)
 
 
         st.caption("Présentation interactive – radio cliquable, édition et animations")
 
         CONTENT = {
-            "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est mon talent ? ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?.",
+            "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est mon talent ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?.",
             
             "1. Oser rêver": "## 1. Oser rêver.\n\n**Pourquoi rêver est indispensable ?**\n\n Sans rêve, on avance sans boussole. On subit les choix des autres, on vit dans la routine, c'est l'horizon qui guide nos pas.\n\n Exemple concret: l'innovation = c'est le fruit du rêve ",
             
