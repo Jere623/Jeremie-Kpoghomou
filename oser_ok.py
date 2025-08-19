@@ -155,9 +155,9 @@ with right:
         st.caption("Oser, c'est déjà gagner  – Journée d'orientation, 3ème édition")
 
         CONTENT = {
-            "Introduction": "## Introduction\n\n**Trois questions essentielles:**\n\n1. Quel est mon talent ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?.",
+            "Introduction": "## Introduction\n\n**Trois questions essentielles :**\n\n1. Quel est mon talent ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?",
             
-            "1. Oser rêver": "## 1. Oser rêver.\n\n**Pourquoi rêver est indispensable ?**\n\nSans rêve, on avance sans boussole. On subit les choix des autres, on vit dans la routine, c'est l'horizon qui guide nos pas.\n\n Exemple concret : L'innovation = c'est le fruit du rêve ",
+            "1. Oser rêver": "## 1. Oser rêver.\n\n**Pourquoi rêver est indispensable ?**\n\nSans rêve, on avance sans boussole. On subit les choix des autres, on vit dans la routine, c'est l'horizon qui guide nos pas.\n\n Exemple concret : L'innovation  =  c'est le fruit du rêve ",
             
             "2. Choisir avec courage": "## 2. Passer de l’intention à l’action.\n\n**Pourquoi le choix fait peur ?**\n\nLa clé du choix : il faut oser franchir le pas.\n\n Exemple : ose planter, même avec des doutes, verra pousser des fruits.",
             
