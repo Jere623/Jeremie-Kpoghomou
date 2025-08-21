@@ -152,7 +152,7 @@ with right:
         # ----------- CONTENU PRINCIPAL ----------
         st.markdown("<div class='big-title' style='text-align: center;'>Oser rêver, choisir et construire son avenir</div>", unsafe_allow_html=True)
 
-        st.caption("Oser, c'est déjà gagner  – Journée d'orientation, 3ème édition")
+        st.caption("rêver, c’est la permission de commencer  – Journée d'orientation, 3ème édition")
 
         CONTENT = {
             "Introduction": "## Introduction\n\n**📌 Trois questions essentielles :**\n\n1. Quel est mon talent ?\n\n2. Quelle voie choisir ?\n\n3. Comment bâtir ma carrière pas à pas ?",
