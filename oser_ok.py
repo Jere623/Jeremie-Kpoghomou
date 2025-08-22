@@ -163,17 +163,20 @@ with right:
             
             "3. Construire pas à pas": "## 3. Construire pas à pas\n\nConstruire, c’est accepter le temps et l’effort.\n\n**📌 Les ingrédients de la construction :**\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
            
-            "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n ✅ Oser rêver dès le collège\n\n ✅ Choisir avec courage à l’université \n\n ✅ Construire avec persévérance via la spécialisation : Triple Master (Data Science, Statistiques appliquées, Finances publiques).\n\n ✅ Appliquer dans le monde professionnel.",
+            "4. Messages ciblés": None,
+            #Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n ✅ Oser rêver dès le collège\n\n ✅ Choisir avec courage à l’université \n\n ✅ Construire avec persévérance via la spécialisation : Triple Master (Data Science, Statistiques appliquées, Finances publiques).\n\n ✅ Appliquer dans le monde professionnel.",
             
-            "5. Messages ciblés": None,
+            "5. Trois (3) mots clés universelles": "## 5. Trois (3) mots clés universelles\n\n Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
+            #Messages ciblés": None,
             
-            "6. Trois (3) mots clés universelles": "## 6. Trois (3) mots clés universelles\n\n Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
+            "6. Mon parcours comme illustration": "## 6. Mon parcours comme illustration\n\n ✅ Oser rêver dès le collège\n\n ✅ Choisir avec courage à l’université \n\n ✅ Construire avec persévérance via la spécialisation : Triple Master (Data Science, Statistiques appliquées, Finances publiques).\n\n ✅ Appliquer dans le monde professionnel.",
+            #Trois (3) mots clés universelles": "## 6. Trois (3) mots clés universelles\n\n Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
             
             "7. Conclusion": "## 7. Conclusion\n\n**📌 L’avenir n’est pas une chance, c’est une responsabilité.**\n\n Il ne dépend pas seulement de vos conditions, mais de votre capacité à rêver, à choisir et à construire.\n\n Votre avenir commence aujourd’hui. Pas demain, pas dans un an : aujourd’hui.",
         }
 
-        if st.session_state.section == "5. Messages ciblés":
-            st.subheader("5. Messages ciblés")
+        if st.session_state.section == "4. Messages ciblés":
+            st.subheader("4. Messages ciblés")
             etudiants = st.checkbox("Aux élèves et aux étudiants", value=False)
             if etudiants:
                 st.info("👉 vous devez explorer, tester, être curieux, car le diplôme seul ne comptera pas.")
