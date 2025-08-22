@@ -161,7 +161,7 @@ with right:
             
             "2. Choisir avec courage": "## 2. Choisir avec courage.\n\n**📌 Pourquoi le choix fait peur ?**\n\nLa clé du choix : il faut oser franchir le pas.\n\n Exemple : ose planter, même avec des doutes, verra pousser des fruits.",
             
-            "3. Construire pas à pas": "## 3. Faire de son avenir une réalité\n\nConstruire, c’est accepter le temps et l’effort.\n\n**📌 Les ingrédients de la construction :**\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
+            "3. Construire pas à pas": "## 3. Construire pas à pas\n\nConstruire, c’est accepter le temps et l’effort.\n\n**📌 Les ingrédients de la construction :**\n\n La discipline\n\n L’apprentissage\n\n La persévérance",
            
             "4. Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n ✅ Oser rêver dès le collège\n\n ✅ Choisir avec courage à l’université \n\n ✅ Construire avec persévérance via la spécialisation : Triple Master (Data Science, Statistiques appliquées, Finances publiques).\n\n ✅ Appliquer dans le monde professionnel.",
             
