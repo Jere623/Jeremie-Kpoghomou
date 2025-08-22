@@ -169,7 +169,7 @@ with right:
             "4. Messages ciblés": None,
             #Mon parcours comme illustration": "## 4. Mon parcours comme illustration\n\n ✅ Oser rêver dès le collège\n\n ✅ Choisir avec courage à l’université \n\n ✅ Construire avec persévérance via la spécialisation : Triple Master (Data Science, Statistiques appliquées, Finances publiques).\n\n ✅ Appliquer dans le monde professionnel.",
             
-            "5. Trois (3) mots clés universelles": "## 5. Trois (3) mots clés universelles\n\n Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
+            "5. Trois (3) mots clés universelles": "## 5. Trois (3) mots clés universelles\n\n 📌 Résumons tout en trois mots simples:\n\n 👉 Rêver : pour savoir où aller.\n\n 👉 Choisir : pour oser avancer.\n\n 👉 Construire : pour donner une réalité à vos projets.",
             #Messages ciblés": None,
             
             "6. Mon parcours comme illustration": "## 6. Mon parcours comme illustration\n\n ✅ Oser rêver dès le collège\n\n ✅ Choisir avec courage à l’université \n\n ✅ Construire avec persévérance via la spécialisation : Triple Master (Data Science, Statistiques appliquées, Finances publiques).\n\n ✅ Appliquer dans le monde professionnel.",
