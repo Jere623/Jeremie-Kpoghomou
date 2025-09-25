@@ -142,12 +142,12 @@ with left:
     if show_qr_checkbox:
         show_real_qr = st.checkbox("Afficher QRcode", value=True)
         if show_real_qr:
-            qr_path = Path("/Users/jeremie/Desktop/Myprojet_C02/QRCode_Formation_IA.png")
+            qr_path = Path("QRCode_Formation_IA.png")
             if qr_path.exists():
                 img_qr = Image.open(qr_path)
                 st.image(img_qr, caption="🔗 QR Code", use_column_width=True)
             else:
-                st.warning("Le fichier QRCode_Quiz.png est introuvable.")
+                st.warning("Le fichier QRCode_Formation_IA.png est introuvable.")
 
     if st.session_state.presentation_on:
         selected_section = st.radio(
@@ -265,7 +265,7 @@ with right:
         # Section Quiz
         if current_section == "6. Quiz de Fin de Formation (20 questions)":
             if st.button("📲 Cliquez ici pour voir le QR Code du Quiz"):
-                qr_path = Path("/Users/jeremie/Desktop/Myprojet_C02/Quiz_sépa_en_2_IA.png")
+                qr_path = Path("Quiz_sépa_en_2_IA.png")
                 if qr_path.exists():
                     img_qr = Image.open(qr_path)
                     img_qr = img_qr.resize((200, 180))
