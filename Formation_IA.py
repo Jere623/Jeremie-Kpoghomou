@@ -197,7 +197,7 @@ with right:
         CONTENT = {
             "Introduction": "## Introduction et Objectifs de la Formation\n\n**🎯 Objectifs pédagogiques :**\n1. Comprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative\n2. Découvrir les domaines et applications majeures de l’IA\n\n3. Savoir rédiger des prompts efficaces pour générer du contenu pertinent \n\n4. Apprendre à utiliser l’IA pour améliorer son CV.\n\n5. Éviter les pièges courants liés à l’ATS et à la rédaction de CV\n\n6. Explorer les meilleurs sites et outils pour créer un CV optimisé.",
             "1. Présentation": "## 1. Présentation.\n\n**💼 Décrire vos parcours pour comprendre les attentes et les adapter**\n\n**📖 Me présenter (Parcours scolaire et Professionnel)**",
-            "2. Comprendre l’IA et l’IA Générative": "## 2. Comprendre l’IA et l’IA Générative.\n\n**🎯 Objectifs visés**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative.\n\nDécouvrir les domaines et applications majeures de l’IA.\n\nApprendre à utiliser l’IA pour améliorer son CV.\n\nSavoir rédiger des prompts efficaces pour générer du contenu pertinent.\n\nÉviter les pièges courants liés à l’ATS et à la rédaction de CV.\n\nExplorer les meilleurs sites et outils pour créer un CV optimisé....",
+            "2. Comprendre l’IA et l’IA Générative": "## 2. Comprendre l’IA et l’IA Générative.\n\n**🎯 Objectifs visés**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative. Découvrir les domaines et applications majeures de l’IA. Apprendre à utiliser l’IA pour améliorer son CV.Savoir rédiger des prompts efficaces pour générer du contenu pertinent.Éviter les pièges courants liés à l’ATS et à la rédaction de CV. Explorer les meilleurs sites et outils pour créer un CV optimisé....",
             "3. Les Domaines de l’IA et Applications Utiles": "## 3. Les Domaines de l’IA et Applications Utiles\n\n**🧠 Définition de l’IA**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative.\n\nIA (Intelligence Artificielle) : ensemble de technologies permettant à une machine d’imiter l’intelligence humaine (raisonner, apprendre, décider).\n\n**🖼️ Définition de l’IA générative**\n\nIA générative : branche de l’IA capable de créer du contenu nouveau (texte, image, vidéo, son).\n\nExemples : ChatGPT (texte), DALL-E (images), Midjourney, Claude AI.",
             "4. L'art du prompting": "## 4. L'art du prompting\n\nLe prompting est l’art de formuler correctement des requêtes à une IA générative pour obtenir un contenu pertinent et précis.",
             "4. Messages ciblés": "## 4. Messages ciblés\n\nCeci est une section simple pour afficher des messages aux différents profils.",
@@ -213,9 +213,10 @@ with right:
         # Ajout des checkbox demandées (uniquement ces 3 blocs, rien d'autre modifié)
         if current_section == "2. Comprendre l’IA et l’IA Générative":
             if st.checkbox("🔑 Définition de l'IA"):
-                st.info("**L’intelligence artificielle (IA)** est l’ensemble des méthodes, technologies et systèmes informatiques qui permettent à des machines d’accomplir des tâches nécessitant normalement l’intelligence humaine, comme l’apprentissage, le raisonnement, la résolution de problèmes, la perception ou la prise de décision.")
-            if st.checkbox("📖 Présentation"):
+                st.info("**L’intelligence artificielle (IA)** est l’ensemble des méthodes, technologies et systèmes informatiques qui permettent à des machines d’accomplir des tâches nécessitant normalement l’intelligence humaine, comme **l’apprentissage, le raisonnement, la résolution de problèmes, la perception ou la prise de décision**.")
+            if st.checkbox("🛠️ But"):
                 st.info("- L'Intelligence Artificielle permet à une machine de raisonner, apprendre et prendre des décisions. \n\n- L'IA générative crée du contenu nouveau : texte, image, son, vidéo.\n\n- Exemples : ChatGPT pour le texte, DALL-E pour les images, Midjourney, Claude AI.")
+            if st.checkbox("🛠️ le tableau comparatif IA classique vs IA générative"):
                 
             
 
@@ -226,6 +227,23 @@ with right:
                 st.info("Des prompts efficaces permettent de gagner du temps et d'obtenir un contenu exploitable directement.")
             if st.checkbox("📋 Liste"):
                 st.info("Checklist : clair, précis, contexte, format, attentes, contraintes.")
+                st.markdown("""
+                | **IA classique**                        | **IA générative**                    |
+                |----------------------------------------|-------------------------------------|
+                | Analyse, prédit, classifie, optimise   | Crée du contenu original             |
+                | Utilise des modèles prédictifs         | Utilise des modèles de langage (LLM) |
+                | Répond à “Que se passera-t-il ?”       | Répond à “Invente quelque chose de nouveau” |
+                | Ex. : Système de recommandation Netflix | Ex. : Rédaction automatique d’un CV personnalisé |
+                """)
+            if st.checkbox("⭐ Programme classique vs Programme IA"):
+                st.markdown("""
+                | **Programme / Script classique**        | **Programme utilisant l’IA**        |
+                |----------------------------------------|-----------------------------------|
+                | Suit des instructions fixes            | Apprend à partir de données        |
+                | Ne s’adapte pas automatiquement        | Peut s’améliorer avec l’expérience |
+                | Donne toujours le même résultat pour les mêmes données | Peut prédire ou générer des résultats nouveaux |
+                | Exemple : script de présentation et Quiz | Exemple : modèle de prédiction de prix |
+                """)
 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
             if st.checkbox("✅ Bonnes pratiques"):
