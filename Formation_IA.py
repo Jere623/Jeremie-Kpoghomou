@@ -212,11 +212,11 @@ with right:
 
         # Ajout des checkbox demandées (uniquement ces 3 blocs, rien d'autre modifié)
         if current_section == "2. Comprendre l’IA et l’IA Générative":
-            if st.checkbox("🔑 Définition de l'IA"):
+            if st.checkbox("🧠 Définition de l'IA"):
                 st.info("**L’intelligence artificielle (IA)** est l’ensemble des méthodes, technologies et systèmes informatiques qui permettent à des machines d’accomplir des tâches nécessitant normalement l’intelligence humaine, comme **l’apprentissage, le raisonnement, la résolution de problèmes, la perception ou la prise de décision**.")
-            if st.checkbox("➗ But"):
+            if st.checkbox("🛠️ But"):
                 st.info("1- Automatisation des tâches répétitives. \n\n2- Créativité et innovation. Ex: L'IA générative crée du contenu nouveau (ChatGPT pour du texte, DALL-E pour les images, son, vidéo).\n\n- Amélioration de la productivité, Aide à la décision et Amélioration de la productivité.")
-            if st.checkbox("🛠️ le tableau comparatif IA classique vs IA générative"):
+            if st.checkbox("🔑 le tableau comparatif IA classique vs IA générative"):
                 st.info("Répond à “Que se passera-t-il ?” | Répond à “Invente quelque chose de nouveau”.")
                 st.markdown("""
                 | Aspect            | IA Classique                          | IA Générative                     |
