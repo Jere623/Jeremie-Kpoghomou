@@ -255,6 +255,7 @@ with right:
                         - Formuler des prompts clairs et précis.
                         - Ajouter un contexte suffisant pour orienter la réponse de l'IA.
                         - Définir le format de sortie attendu.
+                        https://jeremie-k-formation-ia.streamlit.app/
                         """)
             if st.checkbox("⚠️ Erreurs à éviter"):
                 st.markdown("""
