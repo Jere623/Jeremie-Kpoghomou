@@ -243,7 +243,8 @@ with right:
         if current_section == "4. L'art du prompting":
             if st.checkbox("⭐ Caractéristiques d’un Bon Prompt"):
                 st.info("Le prompting bien fait maximise la pertinence et l'efficacité des réponses de l'IA")
-                st.markdown("""| **Caractéristique**         | **Pourquoi c’est important**                                                           |
+                st.markdown("""
+| **Caractéristique**         | **Pourquoi c’est important**                                                           |
 | --------------------------- | -------------------------------------------------------------------------------------- |
 | **Clarté**                  | Évite les réponses hors sujet ou vagues                                                |
 | **Précision**               | Plus le prompt est précis, plus la réponse est pertinente                              |
