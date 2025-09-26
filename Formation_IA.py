@@ -217,15 +217,6 @@ with right:
             if st.checkbox("🛠️ But"):
                 st.info("- L'Intelligence Artificielle permet à une machine de raisonner, apprendre et prendre des décisions. \n\n- L'IA générative crée du contenu nouveau : texte, image, son, vidéo.\n\n- Exemples : ChatGPT pour le texte, DALL-E pour les images, Midjourney, Claude AI.")
             if st.checkbox("🛠️ le tableau comparatif IA classique vs IA générative"):
-                
-            
-
-        if current_section == "4. L'art du prompting":
-            if st.checkbox("⭐ Importance"):
-                st.info("Le prompting bien fait maximise la pertinence et l'efficacité des réponses de l'IA")
-            if st.checkbox("💡 Avantage"):
-                st.info("Des prompts efficaces permettent de gagner du temps et d'obtenir un contenu exploitable directement.")
-            if st.checkbox("📋 Liste"):
                 st.info("Checklist : clair, précis, contexte, format, attentes, contraintes.")
                 st.markdown("""
                 | **IA classique**                        | **IA générative**                    |
@@ -245,6 +236,16 @@ with right:
                 | Exemple : script de présentation et Quiz | Exemple : modèle de prédiction de prix |
                 """)
 
+                
+            
+        # Tableau comparatif et programme IA
+        if current_section == "4. L'art du prompting":
+            if st.checkbox("⭐ Importance"):
+                st.info("Le prompting bien fait maximise la pertinence et l'efficacité des réponses de l'IA")
+            if st.checkbox("💡 Avantage"):
+                st.info("Des prompts efficaces permettent de gagner du temps et d'obtenir un contenu exploitable directement.")
+            if st.checkbox("📋 Liste"):
+                
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
             if st.checkbox("✅ Bonnes pratiques"):
                 st.markdown("""
@@ -282,13 +283,13 @@ with right:
                 """)
 
         # Messages ciblés
-        if current_section == "4. Messages ciblés":
-            if st.checkbox("Aux élèves et aux étudiants"):
-                st.info("👉 Vous devez explorer, tester, être curieux, car le diplôme seul ne comptera pas.")
-            if st.checkbox("Diplômés en recherche d'emploi"):
-                st.info("👉 Votre valeur n’est pas définie par votre situation actuelle. Montrez vos talents, même à petite échelle.")
-            if st.checkbox("Aux travailleurs"):
-                st.info("👉 Le monde change, et vous devez vous réinventer.")
+#        if current_section == "4. Messages ciblés":
+#            if st.checkbox("Aux élèves et aux étudiants"):
+#                st.info("👉 Vous devez explorer, tester, être curieux, car le diplôme seul ne comptera pas.")
+#            if st.checkbox("Diplômés en recherche d'emploi"):
+#                st.info("👉 Votre valeur n’est pas définie par votre situation actuelle. Montrez vos talents, même à petite échelle.")
+#            if st.checkbox("Aux travailleurs"):
+#                st.info("👉 Le monde change, et vous devez vous réinventer.")
 
         # Section Quiz
         if current_section == "6. Quiz de Fin de Formation (20 questions)":
