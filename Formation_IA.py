@@ -234,7 +234,7 @@ with right:
                 | Suit des instructions fixes            | Apprend à partir de données        |
                 | Ne s’adapte pas automatiquement        | Peut s’améliorer avec l’expérience |
                 | Donne toujours le même résultat pour les mêmes données | Peut prédire ou générer des résultats nouveaux |
-                | Exemple : script de présentation et Quiz | Exemple : modèle de prédiction de prix |
+                | Exemple : script de présentation(https://github.com/Jere623/Jeremie-Kpoghomou/edit/main/Formation_IA.py) et Quiz(https://script.google.com/u/0/home/projects/1KaG6heGhOmc-O56AmUgzIQwNWqHk9HV_hJokGk5wkTN4jW8O-EgcVKI-/edit?pli=1) | Exemple : modèle de prédiction de prix |
                 """)
 
                 
@@ -255,7 +255,7 @@ with right:
                         - Formuler des prompts clairs et précis.
                         - Ajouter un contexte suffisant pour orienter la réponse de l'IA.
                         - Définir le format de sortie attendu.
-                        https://jeremie-k-formation-ia.streamlit.app/
+                        
                         """)
             if st.checkbox("⚠️ Erreurs à éviter"):
                 st.markdown("""
