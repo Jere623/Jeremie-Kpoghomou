@@ -217,22 +217,15 @@ with right:
             if st.checkbox("➗ But"):
                 st.info("1- Automatisation des tâches répétitives. \n\n2- Créativité et innovation. Ex: L'IA générative crée du contenu nouveau (ChatGPT pour du texte, DALL-E pour les images, son, vidéo).\n\n- Amélioration de la productivité, Aide à la décision et Amélioration de la productivité.")
             if st.checkbox("🛠️ le tableau comparatif IA classique vs IA générative"):
-                st.info("Checklist : clair, précis, contexte, format, attentes, contraintes.")
+                st.info("Répond à “Que se passera-t-il ?” | Répond à “Invente quelque chose de nouveau”.")
                 st.markdown("""
                 | Aspect            | IA Classique                          | IA Générative                     |
 |-------------------|---------------------------------------|-----------------------------------|
 | *Objectif*      | Analyser, prédire, classer           | Créer du contenu nouveau          |
 | *Techniques*    | Machine Learning, Deep Learning      | GANs, transformers                |
 | *Usages*        | Aide à la décision, automatisation   | Créativité, contenu personnalisé  |
-| *Exemples*      | Reconnaissance d'images, diagnostics,Système de recommandation (facebook ou Netflix) | ChatGPT, DALL-E, génération audio |
+| *Exemples*      | Reconnaissance d'images, diagnostics médical ,Système de recommandation (facebook ou Netflix) | ChatGPT, DALL-E, génération audio |
 
-
-                | **IA classique**                        | **IA générative**                    |
-                |----------------------------------------|-------------------------------------|
-                | Analyse, prédit, classifie, optimise   | Crée du contenu original             |
-                | Utilise des modèles prédictifs         | Utilise des modèles de langage (LLM) |
-                | Répond à “Que se passera-t-il ?”       | Répond à “Invente quelque chose de nouveau” |
-                | Ex. : Système de recommandation (facebook ou Netflix) | Ex. : Rédaction automatique d’un CV personnalisé |
                 """)
             if st.checkbox("⭐ Programme classique vs Programme IA"):
                 st.markdown("""
@@ -257,6 +250,7 @@ with right:
                 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
             if st.checkbox("✅ Bonnes pratiques"):
+                st.info("👉 Checklist : clair, précis, contexte, format, attentes, contraintes.")
                 st.markdown("""
                         - Formuler des prompts clairs et précis.
                         - Ajouter un contexte suffisant pour orienter la réponse de l'IA.
