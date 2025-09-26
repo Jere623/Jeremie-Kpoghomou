@@ -245,6 +245,7 @@ with right:
             if st.checkbox("💡 Avantage"):
                 st.info("Des prompts efficaces permettent de gagner du temps et d'obtenir un contenu exploitable directement.")
             if st.checkbox("📋 Liste"):
+                st.info("👉 Le monde change, et vous devez vous réinventer.")
                 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
             if st.checkbox("✅ Bonnes pratiques"):
