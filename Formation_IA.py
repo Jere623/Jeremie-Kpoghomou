@@ -241,10 +241,10 @@ with right:
             
         # Tableau comparatif et programme IA
         if current_section == "4. L'art du prompting":
-            if st.checkbox("⭐ Caractéristiques d’un Bon Prompt"):
+            if st.checkbox("⭐ Caractéristiques et Avantage d’un Prompt"):
                 st.info("Le prompting bien fait maximise la pertinence et l'efficacité des réponses de l'IA")
                 st.markdown("""
-| **Caractéristique**         | **Pourquoi c’est important**                                                           |
+| **Caractéristique**         | **Avantages**                                                           |
 | --------------------------- | -------------------------------------------------------------------------------------- |
 | **Clarté**                  | Évite les réponses hors sujet ou vagues                                                |
 | **Précision**               | Plus le prompt est précis, plus la réponse est pertinente                              |
@@ -255,14 +255,32 @@ with right:
  """)
                 
                 
-            if st.checkbox("💡 Avantage"):
+            if st.checkbox("💡 Structure d'un bon prompt"):
                 st.info("Des prompts efficaces permettent de gagner du temps et d'obtenir un contenu exploitable directement.")
-            if st.checkbox("📋 Liste"):
-                st.info("👉 Le monde change, et vous devez vous réinventer.")
+                st.markdown(""" ✔ Sois clair (ce que tu veux)
+✔ Donne le contexte (pour qui, dans quel but)
+✔ Spécifie le format (liste, plan, tableau, texte court…)
+✔ Ajoute des contraintes (longueur, style, ton, exemples)
+✔ Ajuste si la première réponse n’est pas parfaite (prompting = dialogue)""")
+            if st.checkbox("✅ Bonnes pratiques et ⚠️ Erreurs à éviter"):
+                st.info("👉 Checklist : clair, précis, contexte, format, attentes, contraintes.")
+                st.markdown(""" 
+
+|✅ **Bonne Pratique**        | ❌ **Erreur fréquente**  | 💡 **Exemple**                   |    
+| -------------------------- |-------------------| --------------------------------------------- |
+| Donner un rôle         |  Prompt trop vague : “Parle-moi d’IA”           | Agis comme un coach carrière…               |
+| Définir le public     |  Pas de contexte : “Écris un mail”    | “Explique pour un débutant…”                  |
+| Spécifier le format    |   Demande trop longue et floue    |“Présente sous forme de tableau…”             |
+| Ajouter un contexte  | Demande contradictoire : “Fais court mais très détaillé”  | “Je prépare un pitch pour des investisseurs…” |
+| Mettre des contraintes |           | “En 100 mots, avec 3 exemples…”               |
+| Découper les demandes  |             |“D’abord fais un plan, puis développe…”       |
+ """)
+
+        
                 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
-            if st.checkbox("✅ Bonnes pratiques"):
-                st.info("👉 Checklist : clair, précis, contexte, format, attentes, contraintes.")
+            if st.checkbox(" "):
+                st.info("")
                 st.markdown("""
                         - Formuler des prompts clairs et précis.
                         - Ajouter un contexte suffisant pour orienter la réponse de l'IA.
