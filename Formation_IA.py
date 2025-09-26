@@ -241,8 +241,19 @@ with right:
             
         # Tableau comparatif et programme IA
         if current_section == "4. L'art du prompting":
-            if st.checkbox("⭐ Importance"):
+            if st.checkbox("⭐ Caractéristiques d’un Bon Prompt"):
                 st.info("Le prompting bien fait maximise la pertinence et l'efficacité des réponses de l'IA")
+                st.markdown("""| **Caractéristique**         | **Pourquoi c’est important**                                                           |
+| --------------------------- | -------------------------------------------------------------------------------------- |
+| **Clarté**                  | Évite les réponses hors sujet ou vagues                                                |
+| **Précision**               | Plus le prompt est précis, plus la réponse est pertinente                              |
+| **Contexte**                | Permet à l’IA d’adapter le ton, le style et la difficulté                              |
+| **Format demandé**          | Facilite l’exploitation directe de la réponse (liste, tableau, plan…)                  |
+| **Contraintes**             | Guide l’IA vers un résultat utilisable (longueur, style, exemples inclus)              |
+| **Rôle défini** (optionnel) | Améliore la qualité en donnant une perspective (ex. “agis comme un coach en carrière”) |
+ """)
+                
+                
             if st.checkbox("💡 Avantage"):
                 st.info("Des prompts efficaces permettent de gagner du temps et d'obtenir un contenu exploitable directement.")
             if st.checkbox("📋 Liste"):
