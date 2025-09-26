@@ -257,11 +257,13 @@ with right:
                 
             if st.checkbox("💡 Structure d'un bon prompt"):
                 st.info("Des prompts efficaces permettent de gagner du temps et d'obtenir un contenu exploitable directement.")
-                st.markdown(""" ✔ Sois clair (ce que tu veux)
-✔ Donne le contexte (pour qui, dans quel but)
-✔ Spécifie le format (liste, plan, tableau, texte court…)
-✔ Ajoute des contraintes (longueur, style, ton, exemples)
-✔ Ajuste si la première réponse n’est pas parfaite (prompting = dialogue)""")
+                st.markdown(""" 
+                ✔ Sois clair (ce que tu veux)
+                ✔ Donne le contexte (pour qui, dans quel but)
+                ✔ Spécifie le format (liste, plan, tableau, texte court…)
+                ✔ Ajoute des contraintes (longueur, style, ton, exemples)
+                ✔ Ajuste si la première réponse n’est pas parfaite (prompting = dialogue).
+                """)
             if st.checkbox("✅ Bonnes pratiques et ⚠️ Erreurs à éviter"):
                 st.info("👉 Checklist : clair, précis, contexte, format, attentes, contraintes.")
                 st.markdown(""" 
