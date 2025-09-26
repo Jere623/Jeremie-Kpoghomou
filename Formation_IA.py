@@ -1,3 +1,4 @@
+
 import streamlit as st
 from pathlib import Path
 from PIL import Image
@@ -142,12 +143,12 @@ with left:
     if show_qr_checkbox:
         show_real_qr = st.checkbox("Afficher QRcode", value=True)
         if show_real_qr:
-            qr_path = Path("QRCode_Formation_IA.png")
+            qr_path = Path("/Users/jeremie/Desktop/Myprojet_C02/QRCode_Formation_IA.png")
             if qr_path.exists():
                 img_qr = Image.open(qr_path)
                 st.image(img_qr, caption="🔗 QR Code", use_column_width=True)
             else:
-                st.warning("Le fichier QRCode_Formation_IA.png est introuvable.")
+                st.warning("Le fichier QRCode_Quiz.png est introuvable.")
 
     if st.session_state.presentation_on:
         selected_section = st.radio(
@@ -194,10 +195,10 @@ with right:
 
         # Nouveau contenu injecté dans chaque section
         CONTENT = {
-            "Introduction": "## Introduction & Objectifs de la Formation\n\n**🎯 Objectifs pédagogiques :**\n1. Comprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative\n2. Découvrir les domaines et applications majeures de l’IA\n3. Apprendre à utiliser l’IA pour améliorer son CV\n4. Savoir rédiger des prompts efficaces pour générer du contenu pertinent\n5. Éviter les pièges courants liés à l’ATS et à la rédaction de CV\n6. Explorer les meilleurs sites et outils pour créer un CV optimisé.",
+            "Introduction": "## Introduction & Objectifs de la Formation\n\n**🎯 Objectifs pédagogiques :**\n1. Comprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative\n2. Découvrir les domaines et applications majeures de l’IA\n\n3. Savoir rédiger des prompts efficaces pour générer du contenu pertinent \n\n4. Apprendre à utiliser l’IA pour améliorer son CVn.\n\n5. Éviter les pièges courants liés à l’ATS et à la rédaction de CV\n\n6. Explorer les meilleurs sites et outils pour créer un CV optimisé.",
             "1. Présentation": "## 1. Présentation.\n\n**📌 Parcours Scolaire**\n\nExpériences professionnelles...",
-            "2. Comprendre l’IA et l’IA Générative": "## 2. Comprendre l’IA et l’IA Génative.\n\n**🎯 Objectifs pédagogiques**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative.\nDécouvrir les domaines et applications majeures de l’IA.\nApprendre à utiliser l’IA pour améliorer son CV.\nSavoir rédiger des prompts efficaces pour générer du contenu pertinent.\nÉviter les pièges courants liés à l’ATS et à la rédaction de CV.\nExplorer les meilleurs sites et outils pour créer un CV optimisé....",
-            "3. Les Domaines de l’IA et Applications Utiles": "## 3. Les Domaines de l’IA et Applications Utiles\n\n**🧠 Définition de l’IA**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative.\nIA (Intelligence Artificielle) : ensemble de technologies permettant à une machine d’imiter l’intelligence humaine (raisonner, apprendre, décider).\n\n**🖼️ Définition de l’IA générative**\n\nIA générative : branche de l’IA capable de créer du contenu nouveau (texte, image, vidéo, son).\nExemples : ChatGPT (texte), DALL-E (images), Midjourney, Claude AI.",
+            "2. Comprendre l’IA et l’IA Générative": "## 2. Comprendre l’IA et l’IA Générative.\n\n**🎯 Objectifs pédagogiques**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative.\n\nDécouvrir les domaines et applications majeures de l’IA.\n\nApprendre à utiliser l’IA pour améliorer son CV.\n\nSavoir rédiger des prompts efficaces pour générer du contenu pertinent.\n\nÉviter les pièges courants liés à l’ATS et à la rédaction de CV.\n\nExplorer les meilleurs sites et outils pour créer un CV optimisé....",
+            "3. Les Domaines de l’IA et Applications Utiles": "## 3. Les Domaines de l’IA et Applications Utiles\n\n**🧠 Définition de l’IA**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative.\n\nIA (Intelligence Artificielle) : ensemble de technologies permettant à une machine d’imiter l’intelligence humaine (raisonner, apprendre, décider).\n\n**🖼️ Définition de l’IA générative**\n\nIA générative : branche de l’IA capable de créer du contenu nouveau (texte, image, vidéo, son).\n\nExemples : ChatGPT (texte), DALL-E (images), Midjourney, Claude AI.",
             "4. L'art du prompting": "## 4. L'art du prompting\n\nLe prompting est l’art de formuler correctement des requêtes à une IA générative pour obtenir un contenu pertinent et précis.",
             "4. Messages ciblés": "## 4. Messages ciblés\n\nCeci est une section simple pour afficher des messages aux différents profils.",
             "5. Utiliser l’IA pour Améliorer son CV": "## 5. Utiliser l’IA pour Améliorer son CV\n\n📌 Résumons tout en trois mots simples...",
@@ -212,24 +213,33 @@ with right:
         # Ajout des checkbox demandées (uniquement ces 3 blocs, rien d'autre modifié)
         if current_section == "2. Comprendre l’IA et l’IA Générative":
             if st.checkbox("🎯 Objectif"):
-                st.info("aaaaaa")
+                st.info("- Comprendre les concepts fondamentaux de l'IA et de l'IA générative.\n\n- Identifier les différences entre IA classique et IA générative.\n\n- Explorer les applications concrètes dans différents domaines.")
             if st.checkbox("📖 Présentation"):
-                st.info("yyyyyy")
+                st.info("- L'Intelligence Artificielle permet à une machine de raisonner, apprendre et prendre des décisions. \n\n- L'IA générative crée du contenu nouveau : texte, image, son, vidéo.\n\n- Exemples : ChatGPT pour le texte, DALL-E pour les images, Midjourney, Claude AI.")
+                
             
 
         if current_section == "4. L'art du prompting":
             if st.checkbox("⭐ Importance"):
-                st.info("vsbsbsbssbsb")
+                st.info("Le prompting bien fait maximise la pertinence et l'efficacité des réponses de l'IA")
             if st.checkbox("💡 Avantage"):
-                st.info("oooooooooo")
+                st.info("Des prompts efficaces permettent de gagner du temps et d'obtenir un contenu exploitable directement.")
             if st.checkbox("📋 Liste"):
-                st.info("fffffffff")
+                st.info("Checklist : clair, précis, contexte, format, attentes, contraintes.")
 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
             if st.checkbox("✅ Bonnes pratiques"):
-                st.info("eeeeee")
+                st.markdown("""
+                        - Formuler des prompts clairs et précis.
+                        - Ajouter un contexte suffisant pour orienter la réponse de l'IA.
+                        - Définir le format de sortie attendu.
+                        """)
             if st.checkbox("⚠️ Erreurs à éviter"):
-                st.info("tttttttt")
+                st.markdown("""
+                        - Être trop vague dans le prompt.
+                        - Omettre des détails essentiels ou le contexte.
+                        - Demander des tâches impossibles ou contradictoires à l'IA.
+                        """)
 
         # Tableau comparatif et programme IA
         if current_section == "3. Les Domaines de l’IA et Applications Utiles":
@@ -265,12 +275,19 @@ with right:
         # Section Quiz
         if current_section == "6. Quiz de Fin de Formation (20 questions)":
             if st.button("📲 Cliquez ici pour voir le QR Code du Quiz"):
-                qr_path = Path("Quiz_sépa_en_2_IA.png")
+                qr_path = Path("/Users/jeremie/Desktop/Myprojet_C02/Quiz_sépa_en_2_IA.png")
                 if qr_path.exists():
                     img_qr = Image.open(qr_path)
                     img_qr = img_qr.resize((200, 180))
                     st.image(img_qr, caption="Scannez pour accéder au Quiz")
                 else:
                     st.warning("⚠️ QR Code introuvable, vérifiez le fichier.")
+                    
+        if current_section == "7. Conclusion":
+            st.markdown("""
+                    - L'IA est un outil puissant pour améliorer vos compétences et votre visibilité.
+                    - Maîtriser le prompting et l'utilisation des outils IA est essentiel.
+                    - Intégrer l'IA dans votre parcours professionnel avec prudence et stratégie.
+                    """)
 
         st.markdown("<div class='footnote'>© Présentation - By Jérémie KPOGHOMOU - Data Scientist.</div>", unsafe_allow_html=True)
