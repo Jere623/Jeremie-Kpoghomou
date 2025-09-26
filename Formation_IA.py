@@ -294,7 +294,7 @@ with right:
                 st.markdown("""
                         * ChatGPT / Claude AI : rédaction et amélioration du contenu 
                         * Resumeworded / Jobscan : scoring ATS
-                        📌 Design et mise en page
+                        - 📌 Design et mise en page
                         * Canva (https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit)
                         * Freepik (https://www.freepik.com/pikaso/ai-image-generator?sign-up=email) 
                         * Zety (https://builder.zety.com/resume) 
