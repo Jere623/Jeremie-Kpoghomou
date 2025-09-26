@@ -201,7 +201,7 @@ with right:
             "3. Les Domaines de l’IA et Applications Utiles": "## 3. Les Domaines de l’IA et Applications Utiles\n\n**🧠 Définition de l’IA**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative.\n\nIA (Intelligence Artificielle) : ensemble de technologies permettant à une machine d’imiter l’intelligence humaine (raisonner, apprendre, décider).\n\n**🖼️ Définition de l’IA générative**\n\nIA générative : branche de l’IA capable de créer du contenu nouveau (texte, image, vidéo, son).\n\nExemples : ChatGPT (texte), DALL-E (images), Midjourney, Claude AI.",
             "4. L'art du prompting": "## 4. L'art du prompting\n\nLe prompting est l’art de formuler correctement des requêtes à une IA générative pour obtenir un contenu pertinent et précis.",
             #"4. Messages ciblés": "## 4. Messages ciblés\n\nCeci est une section simple pour afficher des messages aux différents profils.",
-            "5. Utiliser l’IA pour Améliorer son CV": "## 5. Utiliser l’IA pour Améliorer son CV\n\n📌 Résumons tout en trois mots simples...",
+            "5. Utiliser l’IA pour Améliorer son CV": "## 5. Utiliser l’IA pour Améliorer son CV..",
             "6. Quiz de Fin de Formation (20 questions)": "## 6. Quiz de Fin de Formation (20 questions)\n\n✅ Oser rêver dès le collège...",
             "7. Conclusion": "## 7. Conclusion\n\n📌 L’avenir n’est pas une chance, c’est une responsabilité...",
         }
@@ -294,9 +294,9 @@ with right:
                 st.markdown("""
                         * ChatGPT / Claude AI : rédaction et amélioration du contenu 
                         * Resumeworded / Jobscan : scoring ATS
-                        ** Design et mise en page
+                        📌 Design et mise en page
                         * Canva (https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit)
-                        * Freepik* (https://www.freepik.com/pikaso/ai-image-generator?sign-up=email) 
+                        * Freepik (https://www.freepik.com/pikaso/ai-image-generator?sign-up=email) 
                         * Zety (https://builder.zety.com/resume) 
                         """)
 
