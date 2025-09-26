@@ -281,7 +281,7 @@ with right:
         
                 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
-            if st.checkbox(" "):
+            if st.checkbox("🌐 Outils recommandés "):
                 st.info("")
                 st.markdown("""
                         - Formuler des prompts clairs et précis.
@@ -289,11 +289,14 @@ with right:
                         - Définir le format de sortie attendu.
                         
                         """)
-            if st.checkbox("⚠️ Erreurs à éviter"):
+            if st.checkbox("🌐 Outils recommandés"):
                 st.markdown("""
-                        - Être trop vague dans le prompt.
-                        - Omettre des détails essentiels ou le contexte.
-                        - Demander des tâches impossibles ou contradictoires à l'IA.
+                        * ChatGPT / Claude AI : rédaction et amélioration du contenu 
+                        * Resumeworded / Jobscan : scoring ATS
+                        ** Design et mise en page**
+                        *Canva (https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit)
+                        *Freepik* (https://www.freepik.com/pikaso/ai-image-generator?sign-up=email) 
+                        *Zety* (https://builder.zety.com/resume) 
                         """)
 
         # Tableau comparatif et programme IA
