@@ -281,22 +281,23 @@ with right:
         
                 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
-            if st.checkbox("🌐 Outils recommandés "):
+            if st.checkbox("🛠️ Étapes concrètes"):
                 st.info("")
                 st.markdown("""
-                        - Formuler des prompts clairs et précis.
-                        - Ajouter un contexte suffisant pour orienter la réponse de l'IA.
-                        - Définir le format de sortie attendu.
+                        1. Analyse du CV actuel : demander à l’IA un audit et suggestions. 
+                        2. Extraction de mots-clés : coller l’offre d’emploi et demander les compétences prioritaires. 
+                        3. Réécriture ciblée : générer des phrases percutantes, adaptées ATS. 
+                        4. Optimisation de la mise en page : conseils de lisibilité et de formatage.
                         
                         """)
             if st.checkbox("🌐 Outils recommandés"):
                 st.markdown("""
                         * ChatGPT / Claude AI : rédaction et amélioration du contenu 
                         * Resumeworded / Jobscan : scoring ATS
-                        ** Design et mise en page**
-                        *Canva (https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit)
-                        *Freepik* (https://www.freepik.com/pikaso/ai-image-generator?sign-up=email) 
-                        *Zety* (https://builder.zety.com/resume) 
+                        ** Design et mise en page
+                        * Canva (https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit)
+                        * Freepik* (https://www.freepik.com/pikaso/ai-image-generator?sign-up=email) 
+                        * Zety (https://builder.zety.com/resume) 
                         """)
 
         # Tableau comparatif et programme IA
