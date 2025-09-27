@@ -302,13 +302,43 @@ with right:
 
         # Tableau comparatif et programme IA
         if current_section == "3. Les Domaines de l’IA et Applications Utiles":
-            if st.checkbox("Afficher le tableau comparatif IA classique vs IA générative"):
-                st.markdown("""
+            if st.checkbox("Les nouveaux métiers à l'ere de l'IA"):
+                st.markdown(""" | **Métier**                            | **Rôle principal**                                                                             |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Ingénieur Prompt (Prompt Engineer)    | Crée des prompts précis et optimisés pour obtenir les meilleures réponses des IA génératives.  |
+| Data Scientist                        | Analyse les données, entraîne des modèles d’IA et en tire des insights exploitables.           |
+| Éthicien de l’IA                      | Définit les règles d’éthique pour l’utilisation responsable des IA.                            |
+| Spécialiste en Gouvernance de l’IA    | Supervise les politiques de sécurité, conformité et transparence des IA.                       |
+| Entraîneur de modèles (AI Trainer)    | Fournit des données d’exemple pour améliorer les modèles d’IA.                                 |
+| Spécialiste en Sécurité de l’IA       | Protège les modèles d’attaques, empêche les biais malveillants et garantit la confidentialité. |
+| Ingénieur MLOps                       | Met en production les modèles d’IA et assure leur suivi et mise à jour.                        |
+| Designer d’expériences IA             | Conçoit des interactions entre l’humain et l’IA pour des expériences naturelles et efficaces.  |
+| Analyste en Explicabilité de l’IA     | Décrypte les décisions prises par l’IA et les rend compréhensibles pour les utilisateurs.      |
+| Spécialiste en Données Synthétiques   | Crée des données artificielles pour entraîner des IA tout en préservant la vie privée.         |
+| Coach en IA pour entreprises          | Accompagne les équipes dans l’adoption des outils IA.                                          |
+| Développeur d’Agents Conversationnels | Conçoit et optimise des chatbots intelligents et personnalisés.                                |
+| Architecte d’IA Générative            | Met en place l’infrastructure technique pour déployer des modèles génératifs à grande échelle. |
+
                 
                 """)
 
-            if st.checkbox("Afficher le tableau comparatif Programme classique vs Programme IA"):
-                st.markdown("""
+            if st.checkbox("Métiers sous menace avec l’arrivée de l’IA"):
+                st.markdown(""" | **Métier**                                        | **Raison de la menace**                                                      |
+| ------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Agent de saisie / Opérateur de données            | L’IA peut lire, extraire et remplir des formulaires automatiquement.         |
+| Secrétaire administratif                          | L’IA gère les agendas, écrit des mails, répond aux questions fréquentes.     |
+| Téléopérateur / Centre d’appel                    | Chatbots et assistants vocaux automatisent les réponses simples.             |
+| Rédacteur de contenu basique (SEO, blogs simples) | IA générative peut écrire articles, descriptions produits, newsletters.      |
+| Traducteur de documents simples                   | IA traduit rapidement et avec bonne qualité (DeepL, GPT).                    |
+| Analyste junior / Comptable de premier niveau     | IA peut analyser des états financiers et détecter des anomalies.             |
+| Assistant juridique                               | IA peut rédiger des contrats simples et effectuer des recherches juridiques. |
+| Ouvrier sur chaîne de production simple           | Robots + vision par ordinateur = automatisation complète.                    |
+| Cariste / Manutentionnaire                        | Véhicules autonomes et robots logistiques remplacent le travail humain.      |
+| Caissier(e)                                       | Développement des caisses automatiques + paiement sans contact.              |
+| Commerciaux pour produits simples                 | L’IA peut personnaliser les offres et faire des recommandations.             |
+| Graphiste d’entrée de gamme                       | IA (DALL-E, Midjourney) peut générer logos, affiches simples.                |
+| Monteur vidéo basique                             | Outils comme Runway, Pictory automatisent le montage.                        |
+
                 
                 """)
 
