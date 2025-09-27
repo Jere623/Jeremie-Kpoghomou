@@ -305,7 +305,7 @@ with right:
             if st.checkbox("Les nouveaux métiers à l'ere de l'IA"):
                 st.markdown(""" | **Métier**                            | **Rôle principal**                                                                             |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Ingénieur Prompt (Prompt Engineer)    | Crée des prompts précis et optimisés pour obtenir les meilleures réponses des IA génératives.  |
+| **Ingénieur Prompt** (Prompt Engineer)    | Crée des prompts précis et optimisés pour obtenir les meilleures réponses des IA génératives.  |
 | Data Scientist                        | Analyse les données, entraîne des modèles d’IA et en tire des insights exploitables.           |
 | Éthicien de l’IA                      | Définit les règles d’éthique pour l’utilisation responsable des IA.                            |
 | Spécialiste en Gouvernance de l’IA    | Supervise les politiques de sécurité, conformité et transparence des IA.                       |
@@ -355,7 +355,7 @@ with right:
                 """)
             if st.checkbox("🛠️ Étapes concrètes"):
                 st.info("**🧠 A retenir**")
-                st.markdown(""" L’*IA* n’est pas le futur, *elle est déjà là*. Chaque jour, elle transforme nos métiers, nos entreprises et notre façon de vivre.
+                st.markdown(""" L’**IA** n’est pas le futur, *elle est déjà là*. Chaque jour, elle transforme nos métiers, nos entreprises et notre façon de vivre.
 
 Ceux qui *attendent* verront leurs emplois disparaître.
 Ceux qui *agissent* deviendront les acteurs de demain.
