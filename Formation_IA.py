@@ -306,7 +306,7 @@ with right:
                 st.markdown(""" | **Métier**                            | **Rôle principal**                                                                             |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | **Ingénieur Prompt** (Prompt Engineer)    | Crée des prompts précis et optimisés pour obtenir les meilleures réponses des IA génératives.  |
-| Data Scientist                        | Analyse les données, entraîne des modèles d’IA et en tire des insights exploitables.           |
+| **Data Scientist**                        | Analyse les données, entraîne des modèles d’IA et en tire des insights exploitables.           |
 | Éthicien de l’IA                      | Définit les règles d’éthique pour l’utilisation responsable des IA.                            |
 | Spécialiste en Gouvernance de l’IA    | Supervise les politiques de sécurité, conformité et transparence des IA.                       |
 | Entraîneur de modèles (AI Trainer)    | Fournit des données d’exemple pour améliorer les modèles d’IA.                                 |
@@ -317,7 +317,7 @@ with right:
 | Machine Learning Engineer              | Met en production des modèles de ML/IA, optimise leur performance et leur scalabilité.                              |
 | MLOps Engineer                         | Automatise le déploiement, le suivi et la mise à jour des modèles en production.                                    |
 | Spécialiste en Data éthique            | Définit des règles pour éviter les biais et garantir la conformité RGPD.                                            |
-| Data Governance Analyst                | Supervise la qualité, la sécurité et l’accès aux données au sein de l’entreprise.                                   |
+| **Data Governance Analyst**                | Supervise la qualité, la sécurité et l’accès aux données au sein de l’entreprise.                                   |
 | Data Product Manager                   | Conçoit des produits data (API, dashboards, pipelines) en alignement avec les besoins métier.                       |
 | Spécialiste en Données Synthétiques    | Génère des datasets artificiels pour entraîner des modèles tout en préservant la vie privée.                        |
 | AI Data Trainer                        | Alimente les modèles avec des jeux de données représentatifs et valide les sorties générées.                        |
@@ -331,24 +331,24 @@ with right:
             if st.checkbox("Métiers sous menace avec l’arrivée de l’IA"):
                 st.markdown(""" | **Métier**                                        | **Raison de la menace**                                                      |
 | ------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Agent de saisie / Opérateur de données            | L’IA peut lire, extraire et remplir des formulaires automatiquement.         |
-| Secrétaire administratif                          | L’IA gère les agendas, écrit des mails, répond aux questions fréquentes.     |
-| Comptables                              | L’IA peut automatiser la saisie comptable, la détection d’erreurs et la génération de rapports financiers.           |
-| Statisticiens simples                   | Les outils d’IA et de visualisation automatisée remplacent les analyses descriptives basiques.                       |
+| **Agent de saisie / Opérateur de données**            | L’IA peut lire, extraire et remplir des formulaires automatiquement.         |
+| **Secrétaire administratif**                          | L’IA gère les agendas, écrit des mails, répond aux questions fréquentes.     |
+| **Comptables**                              | L’IA peut automatiser la saisie comptable, la détection d’erreurs et la génération de rapports financiers.           |
+| **Statisticiens simples**                   | Les outils d’IA et de visualisation automatisée remplacent les analyses descriptives basiques.                       |
 | Secrétaires                             | L’IA (chatbots, assistants virtuels) automatise la planification, la rédaction d’e-mails et la gestion de documents. |
 | Téléopérateur / Centre d’appel                    | Chatbots et assistants vocaux automatisent les réponses simples.             |
 | Rédacteur de contenu basique (SEO, blogs simples) | IA générative peut écrire articles, descriptions produits, newsletters.      |
-| Traducteur de documents simples                   | IA traduit rapidement et avec bonne qualité (DeepL, GPT).                    |
+| **Traducteur de documents simples**                   | IA traduit rapidement et avec bonne qualité (DeepL, GPT).                    |
 | Analyste junior / Comptable de premier niveau     | IA peut analyser des états financiers et détecter des anomalies.             |
-| Assistant juridique                               | IA peut rédiger des contrats simples et effectuer des recherches juridiques. |
+| **Assistant juridique**                               | IA peut rédiger des contrats simples et effectuer des recherches juridiques. |
 | Ouvrier sur chaîne de production simple           | Robots + vision par ordinateur = automatisation complète.                    |
 | Cariste / Manutentionnaire                        | Véhicules autonomes et robots logistiques remplacent le travail humain.      |
 | Caissier(e)                                       | Développement des caisses automatiques + paiement sans contact.              |
 | Commerciaux pour produits simples                 | L’IA peut personnaliser les offres et faire des recommandations.             |
 | Graphiste d’entrée de gamme                       | IA (DALL-E, Midjourney) peut générer logos, affiches simples.                |
 | Monteur vidéo basique                             | Outils comme Runway, Pictory automatisent le montage.                        |
-| Traducteurs de base                     | Les IA de traduction (DeepL, GPT) offrent des traductions rapides et précises.                                       |
-| Journalistes de synthèse                | L’IA peut rédiger des articles courts (résumés, résultats sportifs, météo) automatiquement.                          |
+| **Traducteurs de base**                     | Les IA de traduction (DeepL, GPT) offrent des traductions rapides et précises.                                       |
+| **Journalistes de synthèse**                | L’IA peut rédiger des articles courts (résumés, résultats sportifs, météo) automatiquement.                          |
 | Télévendeurs                            | Les callbots gèrent les appels de prospection et les réponses standardisées.                                         |
 
                 
@@ -360,14 +360,14 @@ with right:
 Ceux qui *attendent* verront leurs emplois disparaître.
 Ceux qui *agissent* deviendront les acteurs de demain.
 
-🔥 Se former n’est plus une option, c’est une obligation pour rester compétitif.
+🔥 **Se former** n’est plus une option, c’est une obligation pour rester compétitif.
 
-🚀 Les métiers porteurs (IA, data, cybersécurité, green tech…) sont les nouvelles opportunités.
+🚀 **Les métiers porteurs** (IA, data, cybersécurité, green tech…) sont les nouvelles opportunités.
 
-💡 Votre valeur professionnelle dépendra de votre capacité à comprendre, utiliser et maîtriser l’IA.
+💡 **Votre valeur professionnelle** dépendra de votre capacité à comprendre, utiliser et maîtriser l’IA.
 
 📢 Message clé : On ne peut pas arrêter le vent, mais on peut apprendre à construire des éoliennes.
-L’avenir appartient à ceux qui embrassent le changement et se réinventent avant qu’il ne soit trop tard.""")
+L’avenir appartient à ceux qui **embrassent le changement et se réinventent avant qu’il ne soit trop tard**.""")
 
 
         # Messages ciblés
