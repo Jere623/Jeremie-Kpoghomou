@@ -198,7 +198,7 @@ with right:
             "Introduction": "## Introduction et Objectifs de la Formation\n\n**🎯 Objectifs pédagogiques :**\n1. Comprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative\n2. Découvrir les domaines et applications majeures de l’IA\n\n3. Savoir rédiger des prompts efficaces pour générer du contenu pertinent \n\n4. Apprendre à utiliser l’IA pour améliorer son CV.\n\n5. Éviter les pièges courants liés à l’ATS et à la rédaction de CV\n\n6. Explorer les meilleurs sites et outils pour créer un CV optimisé.",
             "1. Présentation": "## 1. Présentation.\n\n**💼 Décrire vos parcours pour comprendre les attentes et les adapter**\n\n**📖 Me présenter (Parcours scolaire et Professionnel)**",
             "2. Comprendre l’IA et l’IA Générative": "## 2. Comprendre l’IA et l’IA Générative.\n\n**🎯 Objectifs visés**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative. Découvrir les domaines et applications majeures de l’IA. Apprendre à utiliser l’IA pour améliorer son CV. Savoir rédiger des prompts efficaces pour générer du contenu pertinent. Éviter les pièges courants liés à l’ATS et à la rédaction de CV. Explorer les meilleurs sites et outils pour créer un CV optimisé....",
-            "3. Les Domaines de l’IA et Applications Utiles": "## 3. Les Domaines de l’IA et Applications Utiles\n\n**🧠 Définition de l’IA**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative.\n\nIA (Intelligence Artificielle) : ensemble de technologies permettant à une machine d’imiter l’intelligence humaine (raisonner, apprendre, décider).\n\n**🖼️ Définition de l’IA générative**\n\nIA générative : branche de l’IA capable de créer du contenu nouveau (texte, image, vidéo, son).\n\nExemples : ChatGPT (texte), DALL-E (images), Midjourney, Claude AI.",
+            "3. Les Domaines de l’IA et Applications Utiles": "## 3. Les Domaines de l’IA et Applications Utiles.",
             "4. L'art du prompting": "## 4. L'art du prompting\n\nLe prompting est l’art de formuler correctement des requêtes à une IA générative pour obtenir un contenu pertinent et précis.",
             #"4. Messages ciblés": "## 4. Messages ciblés\n\nCeci est une section simple pour afficher des messages aux différents profils.",
             "5. Utiliser l’IA pour Améliorer son CV": "## 5. Utiliser l’IA pour Améliorer son CV..",
@@ -312,12 +312,18 @@ with right:
 | Entraîneur de modèles (AI Trainer)    | Fournit des données d’exemple pour améliorer les modèles d’IA.                                 |
 | Spécialiste en Sécurité de l’IA       | Protège les modèles d’attaques, empêche les biais malveillants et garantit la confidentialité. |
 | Ingénieur MLOps                       | Met en production les modèles d’IA et assure leur suivi et mise à jour.                        |
-| Designer d’expériences IA             | Conçoit des interactions entre l’humain et l’IA pour des expériences naturelles et efficaces.  |
-| Analyste en Explicabilité de l’IA     | Décrypte les décisions prises par l’IA et les rend compréhensibles pour les utilisateurs.      |
-| Spécialiste en Données Synthétiques   | Crée des données artificielles pour entraîner des IA tout en préservant la vie privée.         |
-| Coach en IA pour entreprises          | Accompagne les équipes dans l’adoption des outils IA.                                          |
 | Développeur d’Agents Conversationnels | Conçoit et optimise des chatbots intelligents et personnalisés.                                |
 | Architecte d’IA Générative            | Met en place l’infrastructure technique pour déployer des modèles génératifs à grande échelle. |
+| Machine Learning Engineer              | Met en production des modèles de ML/IA, optimise leur performance et leur scalabilité.                              |
+| MLOps Engineer                         | Automatise le déploiement, le suivi et la mise à jour des modèles en production.                                    |
+| Spécialiste en Data éthique            | Définit des règles pour éviter les biais et garantir la conformité RGPD.                                            |
+| Data Governance Analyst                | Supervise la qualité, la sécurité et l’accès aux données au sein de l’entreprise.                                   |
+| Data Product Manager                   | Conçoit des produits data (API, dashboards, pipelines) en alignement avec les besoins métier.                       |
+| Spécialiste en Données Synthétiques    | Génère des datasets artificiels pour entraîner des modèles tout en préservant la vie privée.                        |
+| AI Data Trainer                        | Alimente les modèles avec des jeux de données représentatifs et valide les sorties générées.                        |
+| Data Storyteller                       | Transforme les résultats de l’IA en insights clairs et percutants pour les décideurs.                               |
+| Responsable de l’Explicabilité de l’IA | Analyse les modèles et explique leurs décisions de manière compréhensible pour les utilisateurs et les régulateurs. |
+| Analyste en Détection de Biais         | Identifie et corrige les biais dans les datasets et les modèles IA.                                                 |
 
                 
                 """)
@@ -327,6 +333,9 @@ with right:
 | ------------------------------------------------- | ---------------------------------------------------------------------------- |
 | Agent de saisie / Opérateur de données            | L’IA peut lire, extraire et remplir des formulaires automatiquement.         |
 | Secrétaire administratif                          | L’IA gère les agendas, écrit des mails, répond aux questions fréquentes.     |
+| Comptables                              | L’IA peut automatiser la saisie comptable, la détection d’erreurs et la génération de rapports financiers.           |
+| Statisticiens simples                   | Les outils d’IA et de visualisation automatisée remplacent les analyses descriptives basiques.                       |
+| Secrétaires                             | L’IA (chatbots, assistants virtuels) automatise la planification, la rédaction d’e-mails et la gestion de documents. |
 | Téléopérateur / Centre d’appel                    | Chatbots et assistants vocaux automatisent les réponses simples.             |
 | Rédacteur de contenu basique (SEO, blogs simples) | IA générative peut écrire articles, descriptions produits, newsletters.      |
 | Traducteur de documents simples                   | IA traduit rapidement et avec bonne qualité (DeepL, GPT).                    |
@@ -338,9 +347,28 @@ with right:
 | Commerciaux pour produits simples                 | L’IA peut personnaliser les offres et faire des recommandations.             |
 | Graphiste d’entrée de gamme                       | IA (DALL-E, Midjourney) peut générer logos, affiches simples.                |
 | Monteur vidéo basique                             | Outils comme Runway, Pictory automatisent le montage.                        |
+| Traducteurs de base                     | Les IA de traduction (DeepL, GPT) offrent des traductions rapides et précises.                                       |
+| Journalistes de synthèse                | L’IA peut rédiger des articles courts (résumés, résultats sportifs, météo) automatiquement.                          |
+| Télévendeurs                            | Les callbots gèrent les appels de prospection et les réponses standardisées.                                         |
 
                 
                 """)
+            if st.checkbox("🛠️ Étapes concrètes"):
+                st.info("**🧠 A retenir**")
+                st.markdown(""" L’*IA* n’est pas le futur, *elle est déjà là*. Chaque jour, elle transforme nos métiers, nos entreprises et notre façon de vivre.
+
+Ceux qui *attendent* verront leurs emplois disparaître.
+Ceux qui *agissent* deviendront les acteurs de demain.
+
+🔥 Se former n’est plus une option, c’est une obligation pour rester compétitif.
+
+🚀 Les métiers porteurs (IA, data, cybersécurité, green tech…) sont les nouvelles opportunités.
+
+💡 Votre valeur professionnelle dépendra de votre capacité à comprendre, utiliser et maîtriser l’IA.
+
+📢 Message clé : On ne peut pas arrêter le vent, mais on peut apprendre à construire des éoliennes.
+L’avenir appartient à ceux qui embrassent le changement et se réinventent avant qu’il ne soit trop tard.""")
+
 
         # Messages ciblés
 #        if current_section == "4. Messages ciblés":
