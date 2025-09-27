@@ -196,8 +196,8 @@ with right:
         # Nouveau contenu injecté dans chaque section
         CONTENT = {
             "Introduction": "## Introduction et Objectifs de la Formation\n\n**🎯 Objectifs pédagogiques :**\n1. Comprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative\n2. Découvrir les domaines et applications majeures de l’IA\n\n3. Savoir rédiger des prompts efficaces pour générer du contenu pertinent \n\n4. Apprendre à utiliser l’IA pour améliorer son CV.\n\n5. Éviter les pièges courants liés à l’ATS et à la rédaction de CV\n\n6. Explorer les meilleurs sites et outils pour créer un CV optimisé.",
-            "1. Présentation": "## 1. Présentation.\n\n**💼 Décrire vos parcours pour comprendre les attentes et les adapter**\n\n**📖 Me présenter (Parcours scolaire et Professionnel)**",
-            "2. Comprendre l’IA et l’IA Générative": "## 2. Comprendre l’IA et l’IA Générative.\n\n**🎯 Objectifs visés**\n\nComprendre ce qu’est l’Intelligence Artificielle (IA) et l’IA générative. Découvrir les domaines et applications majeures de l’IA. Apprendre à utiliser l’IA pour améliorer son CV. Savoir rédiger des prompts efficaces pour générer du contenu pertinent. Éviter les pièges courants liés à l’ATS et à la rédaction de CV. Explorer les meilleurs sites et outils pour créer un CV optimisé....",
+            "1. Présentation": "## 1. Présentation.\n\n**💼 Décrire vos parcours pour comprendre les attentes et les adapter**\n\n**📖 Me présenter \n\n- Parcours scolaire\n\- Professionnel)**",
+            "2. Comprendre l’IA et l’IA Générative": "## 2. Comprendre l’IA et l’IA Générative.\n\n**🎯 Bon à savoir**\n\nles spécifisités de l'IA classique et l'IA générative.",
             "3. Les Domaines de l’IA et Applications Utiles": "## 3. Les Domaines de l’IA et Applications Utiles.",
             "4. L'art du prompting": "## 4. L'art du prompting\n\nLe prompting est l’art de formuler correctement des requêtes à une IA générative pour obtenir un contenu pertinent et précis.",
             #"4. Messages ciblés": "## 4. Messages ciblés\n\nCeci est une section simple pour afficher des messages aux différents profils.",
@@ -216,7 +216,7 @@ with right:
                 st.info("**L’intelligence artificielle (IA)** est l’ensemble des méthodes, technologies et systèmes informatiques qui permettent à des machines d’accomplir des tâches nécessitant normalement l’intelligence humaine, comme **l’apprentissage, le raisonnement, la résolution de problèmes, la perception ou la prise de décision**.")
             if st.checkbox("🛠️ But"):
                 st.info("1- Automatisation des tâches répétitives. \n\n2- Créativité et innovation. Ex: L'IA générative crée du contenu nouveau (ChatGPT pour du texte, DALL-E pour les images, son, vidéo).\n\n- Amélioration de la productivité, Aide à la décision et Amélioration de la productivité.")
-            if st.checkbox("🔑 le tableau comparatif IA classique vs IA générative"):
+            if st.checkbox("🔑 Le tableau comparatif IA Classique vs IA Générative"):
                 st.info("Répond à “Que se passera-t-il ?” | Répond à “Invente quelque chose de nouveau”.")
                 st.markdown("""
                 | Aspect            | IA Classique                          | IA Générative                     |
