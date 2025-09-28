@@ -23,7 +23,7 @@ if "initialized" not in st.session_state:
         "linkedin": "https://www.linkedin.com/in/jérémiekpoghomou/",
         "email": "jeremie.kpoghomou77@gmail.com",
         "github": "https://github.com/Jere623",
-        "linkedin_logo": "Linkedin-Logo-PNG.png",
+        "linkedin_logo": "LinkedIn_icon.svg.png",
         "github_logo": "GitHub-cat-logo.jpg",
     }
 
@@ -158,6 +158,7 @@ with left:
                 "2. Comprendre l’IA et l’IA Générative",
                 "3. Les Domaines de l’IA et Applications Utiles",
                 "4. L'art du prompting",
+                #"4. Messages ciblés",
                 "5. Utiliser l’IA pour Améliorer son CV",
                 "6. Quiz de Fin de Formation (20 questions)",
                 "7. Conclusion",
@@ -179,27 +180,10 @@ with left:
 
         st.markdown(f"<div class='profile-name'>{prof['name']}</div>", unsafe_allow_html=True)
         st.markdown(f"<div class='profile-profil'>{prof['profil']}</div>", unsafe_allow_html=True)
-
-        # Affichage avec logos
-        linkedin_logo = Path(prof['linkedin_logo'])
-        github_logo = Path(prof['github_logo'])
-
-        if linkedin_logo.exists():
-            st.markdown(
-                f"<div class='profile-info'><img src='data:image/png;base64,{st.image(linkedin_logo, width=20, output_format='PNG', use_container_width=False)}'/>"
-                f"<a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a></div>", unsafe_allow_html=True)
-        else:
-            st.markdown(f"🔗 <a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a>", unsafe_allow_html=True)
-
-        if github_logo.exists():
-            st.markdown(
-                f"<div class='profile-info'><img src='data:image/png;base64,{st.image(github_logo, width=20, output_format='PNG', use_container_width=False)}'/>"
-                f"<a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>", unsafe_allow_html=True)
-        else:
-            st.markdown(f"💻 <a href='{prof['github']}' target='_blank'>{prof['github']}</a>", unsafe_allow_html=True)
-
+        st.markdown(f"<div class='profile-info'><img src='file://{prof['linkedin_logo']}' /> <a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a></div>", unsafe_allow_html=True)
+        st.markdown(f"<div class='profile-info'><img src='file://{prof['github_logo']}' /> <a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>", unsafe_allow_html=True)
         st.markdown(f"<div class='profile-info'>Email: <a href='mailto:{prof['email']}'>{prof['email']}</a></div>", unsafe_allow_html=True)
-
+ 
 # ------------------------------
 # RIGHT: Display section content dynamically
 # ------------------------------
