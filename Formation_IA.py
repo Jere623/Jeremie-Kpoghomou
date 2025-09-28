@@ -37,8 +37,9 @@ if "initialized" not in st.session_state:
         "github": "https://github.com/Jere623",
         "linkedin_logo": "LinkedIn_icon.svg.png",
         "github_logo": "GitHub-cat-logo.jpg",
-        "email_logo": "Email.png",
+        "email_logo": "Email.png",  # ✅ ajout de la clé manquante
     }
+
 
 # ------------------------------
 # Custom CSS (animations & style)
