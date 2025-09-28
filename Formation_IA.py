@@ -2,6 +2,18 @@ import streamlit as st
 from pathlib import Path
 from PIL import Image
 import io
+import base64  # ✅ nécessaire pour convertir les images en base64
+
+# ------------------------------
+# Fonction utilitaire pour convertir image en base64
+# ------------------------------
+def image_to_base64(image_path):
+    try:
+        with open(image_path, "rb") as f:
+            data = f.read()
+            return base64.b64encode(data).decode()
+    except FileNotFoundError:
+        return None
 
 # ------------------------------
 # Page config & initial state
@@ -71,8 +83,10 @@ st.markdown(
         align-items: center;
     }
 
+    /* ✅ Réduction de la taille des icônes */
     .profile-info img {
-        width: 20px; height: 20px;
+        width: 14px;
+        height: 14px;
         margin-right: 6px;
         object-fit: contain;
     }
@@ -180,9 +194,30 @@ with left:
 
         st.markdown(f"<div class='profile-name'>{prof['name']}</div>", unsafe_allow_html=True)
         st.markdown(f"<div class='profile-profil'>{prof['profil']}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div class='profile-info'><img src='file://{prof['linkedin_logo']}' /> <a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a></div>", unsafe_allow_html=True)
-        st.markdown(f"<div class='profile-info'><img src='file://{prof['github_logo']}' /> <a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>", unsafe_allow_html=True)
+
+        # ✅ LinkedIn et GitHub en base64 avec icônes réduites
+        linkedin_b64 = image_to_base64(prof["linkedin_logo"])
+        github_b64 = image_to_base64(prof["github_logo"])
+
+        if linkedin_b64:
+            st.markdown(
+                f"<div class='profile-info'><img src='data:image/png;base64,{linkedin_b64}' />"
+                f"<a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a></div>",
+                unsafe_allow_html=True,
+            )
+        if github_b64:
+            st.markdown(
+                f"<div class='profile-info'><img src='data:image/jpeg;base64,{github_b64}' />"
+                f"<a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>",
+                unsafe_allow_html=True,
+            )
+
+        # Email reste inchangé (affichage normal)
         st.markdown(f"<div class='profile-info'>Email: <a href='mailto:{prof['email']}'>{prof['email']}</a></div>", unsafe_allow_html=True)
+
+
+
+
 
 
 
