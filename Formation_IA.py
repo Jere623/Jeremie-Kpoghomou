@@ -267,7 +267,7 @@ with right:
                 | Suit des instructions fixes            | Apprend à partir de données        |
                 | Ne s’adapte pas automatiquement        | Peut s’améliorer avec l’expérience |
                 | Donne toujours le même résultat pour les mêmes données | Peut prédire ou générer des résultats nouveaux |
-                | Exemple : script de présentation(https://github.com/Jere623/Jeremie-Kpoghomou/edit/main/Formation_IA.py) et Quiz(https://script.google.com/u/0/home/projects/1KaG6heGhOmc-O56AmUgzIQwNWqHk9HV_hJokGk5wkTN4jW8O-EgcVKI-/edit?pli=1) | Exemple : modèle de prédiction de prix |
+                | Exemple : script de présentation https://github.com/Jere623/Jeremie-Kpoghomou/edit/main/Formation_IA.py et Quiz https://script.google.com/u/0/home/projects/1KaG6heGhOmc-O56AmUgzIQwNWqHk9HV_hJokGk5wkTN4jW8O-EgcVKI-/edit?pli=1 | Exemple : modèle de prédiction de prix |
                 """)
 
                 
@@ -328,9 +328,9 @@ with right:
                         * ChatGPT / Claude AI : rédaction et amélioration du contenu 
                         * Resumeworded / Jobscan : scoring ATS
                         - 📌 Design et mise en page
-                        * Canva (https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit)
-                        * Freepik (https://www.freepik.com/pikaso/ai-image-generator?sign-up=email) 
-                        * Zety (https://builder.zety.com/resume) 
+                        * Canva -> https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit
+                        * Freepik -> https://www.freepik.com/pikaso/ai-image-generator?sign-up=email 
+                        * Zety -> https://builder.zety.com/resume 
                         """)
 
         # Tableau comparatif et programme IA
