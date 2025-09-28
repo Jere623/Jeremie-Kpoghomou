@@ -73,7 +73,7 @@ st.markdown(
 
     .profile-profil {
         font-weight: 800;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         color: purple;
         margin-top: 2px; margin-bottom: 6px;
     }
