@@ -36,7 +36,7 @@ if "initialized" not in st.session_state:
         "email": "jeremie.kpoghomou77@gmail.com",
         "github": "https://github.com/Jere623",
         "linkedin_logo": "LinkedIn_icon.svg.png",
-        "github_logo": "GitHub-cat-logo.jpg",
+        "github_logo": "github_logo_icon_229278",
     }
 
 # ------------------------------
