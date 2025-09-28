@@ -222,7 +222,7 @@ with right:
                 | Aspect            | IA Classique                          | IA Générative                     |
 |-------------------|---------------------------------------|-----------------------------------|
 | *Objectif*      | Analyser, prédire, classer           | Créer du contenu nouveau          |
-| *Techniques*    | Machine Learning, Deep Learning      | GANs, transformers                |
+| *Techniques*    | Machine Learning, Deep Learning      | GANs 🖼️, Transformers 📝                |
 | *Usages*        | Aide à la décision, automatisation   | Créativité, contenu personnalisé  |
 | *Exemples*      | Reconnaissance d'images, diagnostics médical ,Système de recommandation (facebook ou Netflix) | ChatGPT, DALL-E, génération audio |
 
