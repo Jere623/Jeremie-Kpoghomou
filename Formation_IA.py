@@ -1,4 +1,3 @@
-
 import streamlit as st
 from pathlib import Path
 from PIL import Image
@@ -181,15 +180,23 @@ with left:
         st.markdown(f"<div class='profile-name'>{prof['name']}</div>", unsafe_allow_html=True)
         st.markdown(f"<div class='profile-profil'>{prof['profil']}</div>", unsafe_allow_html=True)
 
-        linkedin_logo_path = Path(prof['linkedin_logo'])
-        github_logo_path = Path(prof['github_logo'])
+        # Affichage avec logos
+        linkedin_logo = Path(prof['linkedin_logo'])
+        github_logo = Path(prof['github_logo'])
 
-        if linkedin_logo_path.exists():
-            st.image(linkedin_logo_path, width=20)
-            st.markdown(f"<a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a>", unsafe_allow_html=True)
-        if github_logo_path.exists():
-            st.image(github_logo_path, width=20)
-            st.markdown(f"<a href='{prof['github']}' target='_blank'>{prof['github']}</a>", unsafe_allow_html=True)
+        if linkedin_logo.exists():
+            st.markdown(
+                f"<div class='profile-info'><img src='data:image/png;base64,{st.image(linkedin_logo, width=20, output_format='PNG', use_container_width=False)}'/>"
+                f"<a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a></div>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"🔗 <a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a>", unsafe_allow_html=True)
+
+        if github_logo.exists():
+            st.markdown(
+                f"<div class='profile-info'><img src='data:image/png;base64,{st.image(github_logo, width=20, output_format='PNG', use_container_width=False)}'/>"
+                f"<a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"💻 <a href='{prof['github']}' target='_blank'>{prof['github']}</a>", unsafe_allow_html=True)
 
         st.markdown(f"<div class='profile-info'>Email: <a href='mailto:{prof['email']}'>{prof['email']}</a></div>", unsafe_allow_html=True)
 
