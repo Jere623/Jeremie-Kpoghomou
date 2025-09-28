@@ -1,7 +1,19 @@
 import streamlit as st
 from pathlib import Path
 from PIL import Image
+import base64
 import io
+
+# ------------------------------
+# Fonction utilitaire pour convertir image en base64
+# ------------------------------
+def image_to_base64(image_path):
+    try:
+        with open(image_path, "rb") as f:
+            data = f.read()
+            return base64.b64encode(data).decode()
+    except FileNotFoundError:
+        return None
 
 # ------------------------------
 # Page config & initial state
@@ -33,37 +45,6 @@ if "initialized" not in st.session_state:
 st.markdown(
     """
     <style>
-    :root { --radius: 16px; }
-
-    .big-title {
-        font-weight: 800;
-        font-size: clamp(18px, 5vw, 35px);
-        line-height: 1.2;
-        margin: 0 0 12px 0;
-        background: linear-gradient(90deg, red, yellow, green);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        animation: glow 6s ease-in-out infinite;
-    }
-
-    @keyframes glow {
-        0%,100% { filter: drop-shadow(0 0 0px rgba(0,0,0,0)); }
-        50% { filter: drop-shadow(0 0 6px rgba(0,0,0,.35)); }
-    }
-
-    .profile-name {
-        font-weight: 800; font-size: 1.5rem;
-        margin-top: 2px; margin-bottom: 2px;
-    }
-
-    .profile-profil {
-        font-weight: 800;
-        font-size: 1.2rem;
-        color: purple;
-        margin-top: 2px; margin-bottom: 6px;
-    }
-
     .profile-info {
         font-size: 0.85rem;
         margin-bottom: 4px;
@@ -71,58 +52,13 @@ st.markdown(
         align-items: center;
     }
 
+    /* ✅ Logos plus petits */
     .profile-info img {
-        width: 15px; height: 15px;
+        width: 14px;
+        height: 14px;
         margin-right: 6px;
+        vertical-align: middle;
         object-fit: contain;
-    }
-
-    .intro-box {
-        background-color: #f5f5f5;
-        border-radius: 16px;
-        padding: 0px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-        text-align: center;
-    }
-
-    .intro-box img {
-        margin: 0;
-    }
-
-    .footnote {
-        font-size: 1rem;
-        opacity: .8;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .quiz-button {
-        background-color: #FF5733;
-        color: white;
-        font-weight: bold;
-        padding: 12px;
-        border-radius: 12px;
-        text-align: center;
-        cursor: pointer;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    }
-
-    .nice-button {
-        display: inline-block;
-        background: linear-gradient(90deg, #ff7e5f, #feb47b);
-        color: white;
-        font-weight: bold;
-        padding: 12px 24px;
-        border-radius: 12px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.1rem;
-        transition: 0.3s;
-    }
-    .nice-button:hover {
-        background: linear-gradient(90deg, #feb47b, #ff7e5f);
-        transform: scale(1.05);
-        cursor: pointer;
     }
     </style>
     """,
@@ -158,7 +94,6 @@ with left:
                 "2. Comprendre l’IA et l’IA Générative",
                 "3. Les Domaines de l’IA et Applications Utiles",
                 "4. L'art du prompting",
-                #"4. Messages ciblés",
                 "5. Utiliser l’IA pour Améliorer son CV",
                 "6. Quiz de Fin de Formation (20 questions)",
                 "7. Conclusion",
@@ -178,10 +113,27 @@ with left:
         else:
             st.warning("Aucune image valide trouvée.")
 
+        # Conversion des logos en base64
+        linkedin_b64 = image_to_base64(prof["linkedin_logo"])
+        github_b64 = image_to_base64(prof["github_logo"])
+
         st.markdown(f"<div class='profile-name'>{prof['name']}</div>", unsafe_allow_html=True)
         st.markdown(f"<div class='profile-profil'>{prof['profil']}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div class='profile-info'><img src='file://{prof['linkedin_logo']}' /> <a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a></div>", unsafe_allow_html=True)
-        st.markdown(f"<div class='profile-info'><img src='file://{prof['github_logo']}' /> <a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>", unsafe_allow_html=True)
+
+        # ✅ Affichage avec image inline
+        if linkedin_b64:
+            st.markdown(
+                f"<div class='profile-info'><img src='data:image/png;base64,{linkedin_b64}' />"
+                f"<a href='{prof['linkedin']}' target='_blank'>{prof['linkedin']}</a></div>",
+                unsafe_allow_html=True,
+            )
+        if github_b64:
+            st.markdown(
+                f"<div class='profile-info'><img src='data:image/jpeg;base64,{github_b64}' />"
+                f"<a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>",
+                unsafe_allow_html=True,
+            )
+
         st.markdown(f"<div class='profile-info'>Email: <a href='mailto:{prof['email']}'>{prof['email']}</a></div>", unsafe_allow_html=True)
  
 # ------------------------------
