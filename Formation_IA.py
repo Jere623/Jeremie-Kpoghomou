@@ -31,12 +31,12 @@ if "initialized" not in st.session_state:
     st.session_state.profile = {
         "name": "Jérémie KPOGHOMOU",
         "profil": "Ingénieur Data chez Safran Aircraft Engines",
-        "image_path": "KPOGHOMOU-Style libre-102x152 mm.jpg",
+        "image_path": "KPOGHOMOU-Style libre-102x152 mm.png",
         "linkedin": "https://www.linkedin.com/in/jérémiekpoghomou/",
         "email": "jeremie.kpoghomou77@gmail.com",
         "github": "https://github.com/Jere623",
         "linkedin_logo": "LinkedIn_icon.svg.png",
-        "github_logo": "github_logo_icon_229278",
+        "github_logo": "github_logo_icon_229278.png",
     }
 
 # ------------------------------
