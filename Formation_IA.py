@@ -37,6 +37,7 @@ if "initialized" not in st.session_state:
         "github": "https://github.com/Jere623",
         "linkedin_logo": "LinkedIn_icon.svg.png",
         "github_logo": "GitHub-cat-logo.jpg",
+        "email_logo": "Email.png",
     }
 
 # ------------------------------
@@ -195,9 +196,10 @@ with left:
         st.markdown(f"<div class='profile-name'>{prof['name']}</div>", unsafe_allow_html=True)
         st.markdown(f"<div class='profile-profil'>{prof['profil']}</div>", unsafe_allow_html=True)
 
-        # ✅ LinkedIn et GitHub en base64 avec icônes réduites
+        # ✅ LinkedIn, GitHub et Email avec icônes en base64
         linkedin_b64 = image_to_base64(prof["linkedin_logo"])
         github_b64 = image_to_base64(prof["github_logo"])
+        email_b64 = image_to_base64(prof["email_logo"])
 
         if linkedin_b64:
             st.markdown(
@@ -211,9 +213,12 @@ with left:
                 f"<a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>",
                 unsafe_allow_html=True,
             )
-
-        # Email reste inchangé (affichage normal)
-        st.markdown(f"<div class='profile-info'>Email: <a href='mailto:{prof['email']}'>{prof['email']}</a></div>", unsafe_allow_html=True)
+        if email_b64:
+            st.markdown(
+                f"<div class='profile-info'><img src='data:image/png;base64,{email_b64}' />"
+                f"<a href='mailto:{prof['email']}'>{prof['email']}</a></div>",
+                unsafe_allow_html=True,
+            )
 
 
 
