@@ -36,7 +36,7 @@ if "initialized" not in st.session_state:
         "email": "jeremie.kpoghomou77@gmail.com",
         "github": "https://github.com/Jere623",
         "linkedin_logo": "LinkedIn_icon.svg.png",
-        "github_logo": "GitHub-cat-logo.jpg",
+        "github_logo": "github_logo_icon_229278.png",
         "email_logo": "Email.png",  # ✅ ajout de la clé manquante
     }
 
@@ -210,7 +210,7 @@ with left:
             )
         if github_b64:
             st.markdown(
-                f"<div class='profile-info'><img src='data:image/jpeg;base64,{github_b64}' />"
+                f"<div class='profile-info'><img src='data:image/png;base64,{github_b64}' />"
                 f"<a href='{prof['github']}' target='_blank'>{prof['github']}</a></div>",
                 unsafe_allow_html=True,
             )
