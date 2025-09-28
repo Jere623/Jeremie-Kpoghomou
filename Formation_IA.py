@@ -38,7 +38,7 @@ st.markdown(
 
     .big-title {
         font-weight: 800;
-        font-size: clamp(15px, 5vw, 30px);
+        font-size: clamp(18px, 5vw, 35px);
         line-height: 1.2;
         margin: 0 0 12px 0;
         background: linear-gradient(90deg, red, yellow, green);
