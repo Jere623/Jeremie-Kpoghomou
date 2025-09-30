@@ -330,9 +330,9 @@ with right:
                         🔹 **Conclusion**
                         * Le CV est à la fois un outil marketing personnel et un passeport professionnel. 
                         * Un bon CV doit être:
-                        a- Clair et lisible (forme). 
-                        b- Orienté résultats (contenu). 
-                        c- Adapté à l’offre (personnalisation). 
+                        -a- Clair et lisible (forme) 
+                        b- Orienté résultats (contenu) 
+                        c- Adapté à l’offre (personnalisation) 
                         * Il ne garantit pas un emploi, mais augmente fortement les chances d’obtenir un entretien.
                         
                         """)
