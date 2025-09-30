@@ -324,14 +324,8 @@ with right:
                 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
             if st.checkbox("🛠️ Étapes concrètes"):
-                st.markdown("""1. Comprendre la finalité du CV
-                2. La structure classique d’un CV
-                3. Les règles de lisibilité et design
-                4. L’impact du contenu
-                5. Les pièges à éviter
-                6. Optimiser pour les logiciels de tri (ATS)
-                7. L’adaptation du CV
-                """)
+                st.info("1. Comprendre la finalité du CV \n\n2. La structure classique d’un CV \n\n3. Les règles de lisibilité et design \n\n4. L’impact du contenu \n\n5. Les pièges à éviter \n\n6. Optimiser pour les logiciels de tri (ATS) \n\n7. L’adaptation du CV
+                ")
                 
                 st.markdown("""
                         🔹 **Conclusion**
