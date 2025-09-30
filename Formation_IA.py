@@ -329,7 +329,7 @@ with right:
                 st.markdown("""
                         🔹 **Conclusion** 
                         \n\n* Le CV est à la fois un outil marketing personnel et un passeport professionnel. 
-                        \n\n* Un bon CV doit être 
+                        \n\n* Un bon CV doit être : 
                         \n\n1️⃣ Clair et lisible (forme) 
                         \n\n2️⃣ Orienté résultats (contenu) 
                         \n\n3️⃣ Adapté à l’offre (personnalisation) 
