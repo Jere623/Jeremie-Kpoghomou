@@ -327,7 +327,7 @@ with right:
                 st.info("1. Comprendre la finalité du CV \n\n2. La structure classique d’un CV \n\n3. Les règles de lisibilité et design \n\n4. L’impact du contenu \n\n5. Les pièges à éviter \n\n6. Optimiser pour les logiciels de tri (ATS) \n\n7. L’adaptation du CV.")
                 
                 st.markdown("""
-                        🔹 **Conclusion** 
+                        🔹 **Bon à savoir** 
                         \n\n* Le CV est à la fois un outil marketing personnel et un passeport professionnel. 
                         \n\n* Un bon CV doit être : 
                         \n\n1️⃣ Clair et lisible (forme) 
