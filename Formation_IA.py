@@ -243,7 +243,7 @@ with right:
             "3. Les Domaines de l’IA et Applications Utiles": "## 3. Les Domaines de l’IA et Applications Utiles.",
             "4. L'art du prompting": "## 4. L'art du prompting\n\nLe prompting est **l’art de formuler correctement des requêtes** à une IA générative pour obtenir un contenu pertinent et précis.",
             #"4. Messages ciblés": "## 4. Messages ciblés\n\nCeci est une section simple pour afficher des messages aux différents profils.",
-            "5. Utiliser l’IA pour Améliorer son CV": "## 5. Utiliser l’IA pour Améliorer son CV..",
+            "5. Utiliser l’IA pour Améliorer son CV": "## 5. Utiliser l’IA pour Améliorer son CV...",
             "6. Quiz de Fin de Formation (20 questions)": "## 6. Quiz de Fin de Formation (20 questions)\n\n✅ Oser rêver dès le collège...",
             "7. Conclusion": "## 7. Conclusion\n\n📌 L’avenir n’est pas une chance, c’est une responsabilité...",
         }
