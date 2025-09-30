@@ -324,12 +324,23 @@ with right:
                 
         if current_section == "5. Utiliser l’IA pour Améliorer son CV":
             if st.checkbox("🛠️ Étapes concrètes"):
-                st.info("")
+                st.info("1. Comprendre la finalité du CV
+                2. La structure classique d’un CV
+                3. Les règles de lisibilité et design
+                4. L’impact du contenu
+                5. Les pièges à éviter
+                6. Optimiser pour les logiciels de tri (ATS)
+                7. L’adaptation du CV
+                ")
+                
                 st.markdown("""
-                        1. Analyse du CV actuel : demander à l’IA un audit et suggestions. 
-                        2. Extraction de mots-clés : coller l’offre d’emploi et demander les compétences prioritaires. 
-                        3. Réécriture ciblée : générer des phrases percutantes, adaptées ATS. 
-                        4. Optimisation de la mise en page : conseils de lisibilité et de formatage.
+                        🔹 **Conclusion**
+                        * Le CV est à la fois un outil marketing personnel et un passeport professionnel. 
+                        * Un bon CV doit être :
+                        a. Clair et lisible (forme). 
+                        b. Orienté résultats (contenu). 
+                        c. Adapté à l’offre (personnalisation). 
+                        * Il ne garantit pas un emploi, mais augmente fortement les chances d’obtenir un entretien.
                         
                         """)
             if st.checkbox("🌐 Outils recommandés"):
