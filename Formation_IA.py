@@ -318,6 +318,7 @@ with right:
 | Ajouter un contexte  | Demande contradictoire : “Fais court mais très détaillé”  | “Je prépare un pitch pour des investisseurs…” |
 | Mettre des contraintes |           | “En 100 mots, avec 3 exemples…”               |
 | Découper les demandes  |             |“D’abord fais un plan, puis développe…”       |
+Application -> https://chatgpt.com/c/68da38ea-ff14-8322-a059-5e3ebd9ef856
  """)
 
         
@@ -341,9 +342,12 @@ with right:
                         * ChatGPT / Claude AI : rédaction et amélioration du contenu 
                         * Resumeworded / Jobscan : scoring ATS
                         - 📌 Design et mise en page
-                        * Canva -> https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit
+                        * CV Zety -> https://builder.zety.com/resume
+                        * CV fisio -> https://www.canva.com/design/DAFvoRxQ0fA/9pE0j5BXtIDSamVabhJy5Q/edit
+                        * Montage Canva -> https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit
                         * Freepik -> https://www.freepik.com/pikaso/ai-image-generator?sign-up=email 
-                        * Zety -> https://builder.zety.com/resume 
+                        * LM ChatGPT -> https://chatgpt.com/c/68da38ea-ff14-8322-a059-5e3ebd9ef856
+                         
                         """)
 
         # Tableau comparatif et programme IA
