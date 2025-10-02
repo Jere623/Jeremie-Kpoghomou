@@ -343,10 +343,10 @@ Application -> https://chatgpt.com/c/68da38ea-ff14-8322-a059-5e3ebd9ef856
                         * Resumeworded / Jobscan : scoring ATS
                         - 📌 Design et mise en page
                         * CV Zety -> https://builder.zety.com/resume
-                        * CV fisio -> https://www.canva.com/design/DAFvoRxQ0fA/9pE0j5BXtIDSamVabhJy5Q/edit
-                        * CV Freepik -> https://www.freepik.com/pikaso/ai-image-generator?sign-up=email                                               
+                        * CV fisio -> https://fisio.education/editeur/?edit=Nzc5MjR8LSEtfHRlbXBsYXRl
+                        * CV Canva -> https://www.canva.com/design/DAFvoRxQ0fA/9pE0j5BXtIDSamVabhJy5Q/edit                                               
                         * LM ChatGPT -> https://chatgpt.com/c/68da38ea-ff14-8322-a059-5e3ebd9ef856
-                        * Montage Canva -> https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit
+                        * Montage Canva -> https://www.canva.com/design/DAGswU6QT2w/NHYgZxhHCb5jC1lSy7Fo1w/edit            
                         * Image Gemini -> https://gemini.google.com/app/2e9240fdeb7d91ad 
                          
                         """)
